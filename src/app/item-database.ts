@@ -102,7 +102,7 @@ export const ITEMS: ItemData[] = [
         //アイテム名
         item_name: 'Beretta M90 Two',
         //画像
-        items_avatar: 'assets/img/Handgun/M90_Two.jpg',
+        items_avatar: 'assets/img/Handgun/Beretta_M90_Two.jpg',
         //種別
         classify: 'ハンドガン',
         //射撃モード
