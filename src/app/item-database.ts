@@ -515,7 +515,58 @@ export const ITEMS: ItemData[] = [
         //説明
         note: 'USPの.45ACP仕様。'
     },
-    
+    {
+        //アイテム名
+        item_name: 'Mosin-Nagant Obrez',
+        //画像
+        items_avatar: 'assets/img/Handgun/Mosin_Nagant_Obrez.png',
+        //種別
+        classify: 'ハンドガン',
+        //射撃モード
+        fire_mode: 'Volt-action',
+        //信頼性
+        reliability: '□[00]',
+        //至近
+        r_point_blank: '-30',
+        //近距離
+        r_short: '-10',
+        //中距離
+        r_middle: '-40',
+        //遠距離
+        r_long: 'X',
+        //貫通力
+        penetration: '+8',
+        //非貫通D
+        non_penetration_damage: '2D6+8',
+        //貫通D
+        penetration_damage: '3D6+9',
+        //射程
+        range: '50m',
+        //弾数
+        mag_round: '5',
+        //必要筋力
+        kinryoku: '両6/片7',
+        //CP
+        size: '2x2',
+        //消音LV
+        silence: '1',
+        //本体価格
+        item_value: '$1000[11]',
+        //マガジン価格
+        mag_value: '$10[6]',
+        //弾薬
+        cartridge: '7.62x54R',
+        //全長
+        item_width: '250mm',
+        //重量
+        item_weight: '2,000g',
+        //機能
+        efficiency: [
+            '片手-20%','隠匿判定-20%'
+        ],
+        //説明
+        note: '極限まで切り詰められたMosin-Nagantライフル。精度は格段に落ちているが、初速が速く命中率は悪くない。ロシア革命当時ハンドガンが不足し、代わりとして広く使用された。革命が終わってもパルチザン、ゲリラ、そして1980年代でも犯罪行為に使われた。専用マウントがあるため、レールシステムに対応している。'
+    },
     {
         //アイテム名
         item_name: '',
