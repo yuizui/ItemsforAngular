@@ -1,0 +1,22 @@
+{
+  "name": "items",
+  "version": "1.0.0",
+  "description": "itemdesu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuizui/ItemsforAngular.git"
+  },
+  "keywords": [
+    "item"
+  ],
+  "author": "yuizui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuizui/ItemsforAngular/issues"
+  },
+  "homepage": "https://github.com/yuizui/ItemsforAngular#readme"
+}
