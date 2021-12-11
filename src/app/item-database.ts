@@ -72,7 +72,7 @@ export const ITEMS: ItemData[] = [
         note: 'AKシリーズの新型。フリーフローティングバレルに変更され、遠距離の精度が向上した。一部のパーツがM4/M16と互換性がある。最新のものはフォールディングストックが採用され、運用しやすくなった。'
     },
     {
-        item_name: 'AF2011',
+        item_name: 'AF AF2011',
         items_avatar: 'assets/img/Handgun/AF2011.png',
         classify: 'ハンドガン',
         fire_mode: '2',
@@ -97,6 +97,215 @@ export const ITEMS: ItemData[] = [
         efficiency: ['★片手-20%',
                     '弾倉交換：[アイテム使用]2回'],
         note: '.45ACPの威力を倍増させるというコンセプトで作られた、改良ガバメント。ただ合わせたわけではなく、専用設計である。'
+    },
+    {
+        //アイテム名
+        item_name: 'Beretta M90 Two',
+        //画像
+        items_avatar: 'assets\img\Handgun\M90_Two.jpg',
+        //種別
+        classify: 'ハンドガン',
+        //射撃モード
+        fire_mode: 'S',
+        //信頼性
+        reliability: '00[99]',
+        //至近
+        r_point_blank: '0',
+        //近距離
+        r_short: '0',
+        //中距離
+        r_middle: '-40',
+        //遠距離
+        r_long: 'X',
+        //貫通力
+        penetration: '+1',
+        //非貫通D
+        non_penetration_damage: '1D6+2',
+        //貫通D
+        penetration_damage: '2D6+4',
+        //射程
+        range: '50m',
+        //弾数
+        mag_round: '12',
+        //必要筋力
+        kinryoku: '両5/片6',
+        //CP
+        size: '1x2',
+        //消音LV
+        silence: '4',
+        //本体価格
+        item_value: '$3200[14]',
+        //マガジン価格
+        mag_value: '$10[10]',
+        //弾薬
+        cartridge: '.40 S&W',
+        //全長
+        item_width: '216mm',
+        //重量
+        item_weight: '925g',
+        //機能
+        efficiency: [
+            ''
+        ],
+        //説明
+        note: '有名なベレッタ92をアップグレードしたバリエーション。デザインを人間工学的に再設計し、より手にフィットするようになっている。現在はM9A1の販売に移行し一般には生産されていないため、希少。日本の警察も採用している。'
+    },
+    {
+        //アイテム名
+        item_name: 'Beretta M92X',
+        //画像
+        items_avatar: 'assets\img\Handgun\Beretta_M92X.png',
+        //種別
+        classify: 'ハンドガン',
+        //射撃モード
+        fire_mode: 'S',
+        //信頼性
+        reliability: '00[99]',
+        //至近
+        r_point_blank: '-5',
+        //近距離
+        r_short: '+5',
+        //中距離
+        r_middle: '-34',
+        //遠距離
+        r_long: 'X',
+        //貫通力
+        penetration: '+1',
+        //非貫通D
+        non_penetration_damage: '1D6+1',
+        //貫通D
+        penetration_damage: '2D6+3',
+        //射程
+        range: '50m',
+        //弾数
+        mag_round: '17',
+        //必要筋力
+        kinryoku: '両5/片6',
+        //CP
+        size: '1x2',
+        //消音LV
+        silence: '4',
+        //本体価格
+        item_value: '$900[11]',
+        //マガジン価格
+        mag_value: '$10[10]',
+        //弾薬
+        cartridge: '9mmx19',
+        //全長
+        item_width: '211mm',
+        //重量
+        item_weight: '1,245g',
+        //機能
+        efficiency: [
+            ''
+        ],
+        //説明
+        note: '90シリーズの進化系。ダイナミックな射撃競技やディフェンス目的に最適な最高のパフォーマンスを目指した妥協のないピストルとなっている。'
+    },
+    {
+        //アイテム名
+        item_name: 'Beretta M93R',
+        //画像
+        items_avatar: 'assets\img\Handgun\Beretta_M93R.png',
+        //種別
+        classify: 'ハンドガン',
+        //射撃モード
+        fire_mode: 'S/3',
+        //信頼性
+        reliability: '99[98]',
+        //至近
+        r_point_blank: '0',
+        //近距離
+        r_short: '0',
+        //中距離
+        r_middle: '-40',
+        //遠距離
+        r_long: 'X',
+        //貫通力
+        penetration: '+1',
+        //非貫通D
+        non_penetration_damage: '1D6+1',
+        //貫通D
+        penetration_damage: '2D6+3',
+        //射程
+        range: '50m',
+        //弾数
+        mag_round: '20',
+        //必要筋力
+        kinryoku: '両6/片6',
+        //CP
+        size: '1x2',
+        //消音LV
+        silence: '4',
+        //本体価格
+        item_value: '$600[14]',
+        //マガジン価格
+        mag_value: '$10[10]',
+        //弾薬
+        cartridge: '9mmx19',
+        //全長
+        item_width: '240mm',
+        //重量
+        item_weight: '1,170g',
+        //機能
+        efficiency: [
+            '★バースト時片手-10%'
+        ],
+        //説明
+        note: 'イタリアでテロが頻発していた時期にベレッタが開発した、バースト可能な拳銃。民間用に販売はされておらず、公的機関からの需要があった時のみ生産・供給されている'
+    },
+    {
+        //アイテム名
+        item_name: 'Beretta M96F Custom:"Smaurai Edge"',
+        //画像
+        items_avatar: 'assets\img\Handgun\Beretta_M96FC_samurai_edge.jpg',
+        //種別
+        classify: 'ハンドガン',
+        //射撃モード
+        fire_mode: 'S/3',
+        //信頼性
+        reliability: '00[99]',
+        //至近
+        r_point_blank: '0',
+        //近距離
+        r_short: '0',
+        //中距離
+        r_middle: '-40',
+        //遠距離
+        r_long: 'X',
+        //貫通力
+        penetration: '+1',
+        //非貫通D
+        non_penetration_damage: '2D6',
+        //貫通D
+        penetration_damage: '3D6',
+        //射程
+        range: '50m',
+        //弾数
+        mag_round: '20',
+        //必要筋力
+        kinryoku: '両5/片6',
+        //CP
+        size: '1x2',
+        //消音LV
+        silence: '4',
+        //本体価格
+        item_value: '$500[20]',
+        //マガジン価格
+        mag_value: '$10[10]',
+        //弾薬
+        cartridge: '9mmx19',
+        //全長
+        item_width: '259mm',
+        //重量
+        item_weight: '946g',
+        //機能
+        efficiency: [
+            '隠匿判定-20%',
+            '入手にはGMの許可が必要'
+        ],
+        //説明
+        note: '9mmパラよりも強力な.40SWを使用するM92の派生型。強烈な反動をコントロールするためのマウントレイル付スタビライザーと４ポーテッド・コンペンセイターが標準装備されている。ロングマガジンを使用するため、継戦能力に優れる。'
     },
     {
         item_name: 'Cz-75 フルオート',
@@ -153,7 +362,7 @@ export const ITEMS: ItemData[] = [
     },
     {
         //アイテム名
-        item_name: 'BRNO',
+        item_name: 'FK BRNO',
         //画像
         items_avatar: 'assets/img/Handgun/FK_BRNO.jpg',
         //種別
@@ -204,6 +413,111 @@ export const ITEMS: ItemData[] = [
     },
     {
         //アイテム名
+        item_name: 'H&K P30',
+        //画像
+        items_avatar: 'assets\img\Handgun\HK_P30.jpg',
+        //種別
+        classify: 'ハンドガン',
+        //射撃モード
+        fire_mode: 'S',
+        //信頼性
+        reliability: '00[99]',
+        //至近
+        r_point_blank: '0',
+        //近距離
+        r_short: '0',
+        //中距離
+        r_middle: '-40',
+        //遠距離
+        r_long: 'X',
+        //貫通力
+        penetration: '+1',
+        //非貫通D
+        non_penetration_damage: '1D6+2',
+        //貫通D
+        penetration_damage: '2D6+4',
+        //射程
+        range: '50',
+        //弾数
+        mag_round: '13',
+        //必要筋力
+        kinryoku: '両5/片6',
+        //CP
+        size: '1x2',
+        //消音LV
+        silence: '4',
+        //本体価格
+        item_value: '$800[10]',
+        //マガジン価格
+        mag_value: '$10[10}',
+        //弾薬
+        cartridge: '.40 S&W',
+        //全長
+        item_width: '181mm',
+        //重量
+        item_weight: '840g',
+        //機能
+        efficiency: [
+            ''
+        ],
+        //説明
+        note: '2006年に発売された警察向け拳銃。女性警察官からの要望によりグリップのバックストラップを交換出来るP2000を開発したが、今度は男性警察官からグリップが細いとの苦情が出るようになり、あわせてグリップパネルも交換出来るようにしたP3000を開発し、商品化した。'
+    },
+    {
+        //アイテム名
+        item_name: 'H&K USP45 Tactical',
+        //画像
+        items_avatar: 'assets\img\Handgun\HK_usp45_tactical.png',
+        //種別
+        classify: 'ハンドガン',
+        //射撃モード
+        fire_mode: 'S',
+        //信頼性
+        reliability: '00[99]',
+        //至近
+        r_point_blank: '0',
+        //近距離
+        r_short: '0',
+        //中距離
+        r_middle: '-40',
+        //遠距離
+        r_long: 'X',
+        //貫通力
+        penetration: '+0',
+        //非貫通D
+        non_penetration_damage: '2D6-1',
+        //貫通D
+        penetration_damage: '3D6',
+        //射程
+        range: '50m',
+        //弾数
+        mag_round: '12',
+        //必要筋力
+        kinryoku: '両5/片6',
+        //CP
+        size: '1x2',
+        //消音LV
+        silence: '4',
+        //本体価格
+        item_value: '$600[9]',
+        //マガジン価格
+        mag_value: '$10[10]',
+        //弾薬
+        cartridge: '.45ACP',
+        //全長
+        item_width: '201mm',
+        //重量
+        item_weight: '887g',
+        //機能
+        efficiency: [
+            ''
+        ],
+        //説明
+        note: 'USPの.45ACP仕様。'
+    },
+    
+    {
+        //アイテム名
         item_name: '',
         //画像
         items_avatar: '',
@@ -212,7 +526,7 @@ export const ITEMS: ItemData[] = [
         //射撃モード
         fire_mode: '',
         //信頼性
-        reliability: '',
+        reliability: '[]',
         //至近
         r_point_blank: '',
         //近距離
@@ -222,31 +536,31 @@ export const ITEMS: ItemData[] = [
         //遠距離
         r_long: '',
         //貫通力
-        penetration: '',
+        penetration: '+',
         //非貫通D
-        non_penetration_damage: '',
+        non_penetration_damage: 'D6',
         //貫通D
-        penetration_damage: '',
+        penetration_damage: 'D6',
         //射程
-        range: '',
+        range: 'm',
         //弾数
         mag_round: '',
         //必要筋力
         kinryoku: '両/片',
         //CP
-        size: '',
+        size: 'x',
         //消音LV
         silence: '',
         //本体価格
-        item_value: '',
+        item_value: '$[]',
         //マガジン価格
-        mag_value: '',
+        mag_value: '$[]',
         //弾薬
         cartridge: '',
         //全長
-        item_width: '',
+        item_width: 'mm',
         //重量
-        item_weight: '',
+        item_weight: 'g',
         //機能
         efficiency: [
             ''
