@@ -43,7 +43,7 @@ export const ITEMS: ItemData[] = [
     // ここから記入
     {
         item_name: 'AK-12 (2020 model)',
-        items_avatar: 'assets/img/rifle/ak12.png',
+        items_avatar: 'assets/img/Rifle/ak12.png',
         classify: 'ライフル',
         fire_mode: 'S/2/F',
         reliability: '□□[□]',
@@ -73,7 +73,7 @@ export const ITEMS: ItemData[] = [
     },
     {
         item_name: 'AF2011',
-        items_avatar: 'assets/img/Handgun/ak12.png',
+        items_avatar: 'assets/img/Handgun/AF2011.png',
         classify: 'ハンドガン',
         fire_mode: '2',
         reliability: '00[99]',
@@ -155,7 +155,7 @@ export const ITEMS: ItemData[] = [
         //アイテム名
         item_name: 'BRNO',
         //画像
-        items_avatar: 'assets/img/Handgun/BRNO.jpg',
+        items_avatar: 'assets/img/Handgun/FK_BRNO.jpg',
         //種別
         classify: 'ハンドガン',
         //射撃モード
