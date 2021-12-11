@@ -102,7 +102,7 @@ export const ITEMS: ItemData[] = [
         //アイテム名
         item_name: 'Beretta M90 Two',
         //画像
-        items_avatar: 'assets\img\Handgun\M90_Two.jpg',
+        items_avatar: 'assets/img/Handgun/M90_Two.jpg',
         //種別
         classify: 'ハンドガン',
         //射撃モード
@@ -154,7 +154,7 @@ export const ITEMS: ItemData[] = [
         //アイテム名
         item_name: 'Beretta M92X',
         //画像
-        items_avatar: 'assets\img\Handgun\Beretta_M92X.png',
+        items_avatar: 'assets/img/Handgun/Beretta_M92X.png',
         //種別
         classify: 'ハンドガン',
         //射撃モード
@@ -206,7 +206,7 @@ export const ITEMS: ItemData[] = [
         //アイテム名
         item_name: 'Beretta M93R',
         //画像
-        items_avatar: 'assets\img\Handgun\Beretta_M93R.png',
+        items_avatar: 'assets/img/Handgun/Beretta_M93R.png',
         //種別
         classify: 'ハンドガン',
         //射撃モード
@@ -258,7 +258,7 @@ export const ITEMS: ItemData[] = [
         //アイテム名
         item_name: 'Beretta M96F Custom:"Smaurai Edge"',
         //画像
-        items_avatar: 'assets\img\Handgun\Beretta_M96FC_samurai_edge.jpg',
+        items_avatar: 'assets/img/Handgun/Beretta_M96FC_samurai_edge.jpg',
         //種別
         classify: 'ハンドガン',
         //射撃モード
@@ -415,7 +415,7 @@ export const ITEMS: ItemData[] = [
         //アイテム名
         item_name: 'H&K P30',
         //画像
-        items_avatar: 'assets\img\Handgun\HK_P30.jpg',
+        items_avatar: 'assets/img/Handgun/HK_P30.jpg',
         //種別
         classify: 'ハンドガン',
         //射撃モード
@@ -467,7 +467,7 @@ export const ITEMS: ItemData[] = [
         //アイテム名
         item_name: 'H&K USP45 Tactical',
         //画像
-        items_avatar: 'assets\img\Handgun\HK_usp45_tactical.png',
+        items_avatar: 'assets/img/Handgun/HK_usp45_tactical.png',
         //種別
         classify: 'ハンドガン',
         //射撃モード
