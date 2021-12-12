@@ -376,7 +376,7 @@ export const ITEMS: ItemData[] = [
     },
     {
         /*アイテム名*/item_name: 'HK SL9SD',
-        /*画像*/items_avatar: 'ssets/img/Rifle/HK_SL9SD.png',
+        /*画像*/items_avatar: 'assets/img/Rifle/HK_SL9SD.png',
         /*種別*/classify: 'ライフル',
         /*射撃モード*/fire_mode: 'S',
         /*信頼性*/reliability: '□[00]',
