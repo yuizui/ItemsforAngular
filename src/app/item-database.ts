@@ -144,9 +144,7 @@ export const ITEMS: ItemData[] = [
         //重量
         item_weight: '925g',
         //機能
-        efficiency: [
-            ''
-        ],
+        efficiency: [],
         //説明
         note: '有名なベレッタ92をアップグレードしたバリエーション。デザインを人間工学的に再設計し、より手にフィットするようになっている。現在はM9A1の販売に移行し一般には生産されていないため、希少。日本の警察も採用している。'
     },
@@ -196,9 +194,7 @@ export const ITEMS: ItemData[] = [
         //重量
         item_weight: '1,245g',
         //機能
-        efficiency: [
-            ''
-        ],
+        efficiency: [],
         //説明
         note: '90シリーズの進化系。ダイナミックな射撃競技やディフェンス目的に最適な最高のパフォーマンスを目指した妥協のないピストルとなっている。'
     },
@@ -457,9 +453,7 @@ export const ITEMS: ItemData[] = [
         //重量
         item_weight: '840g',
         //機能
-        efficiency: [
-            ''
-        ],
+        efficiency: [],
         //説明
         note: '2006年に発売された警察向け拳銃。女性警察官からの要望によりグリップのバックストラップを交換出来るP2000を開発したが、今度は男性警察官からグリップが細いとの苦情が出るようになり、あわせてグリップパネルも交換出来るようにしたP3000を開発し、商品化した。'
     },
@@ -509,9 +503,7 @@ export const ITEMS: ItemData[] = [
         //重量
         item_weight: '887g',
         //機能
-        efficiency: [
-            ''
-        ],
+        efficiency: [],
         //説明
         note: 'USPの.45ACP仕様。'
     },
@@ -569,6 +561,56 @@ export const ITEMS: ItemData[] = [
     },
     {
         //アイテム名
+        item_name: 'SIG P365XL',
+        //画像
+        items_avatar: 'sassets/img/Handgun/SIG_P365XL.jpeg',
+        //種別
+        classify: 'ハンドガン',
+        //射撃モード
+        fire_mode: 'S',
+        //信頼性
+        reliability: '00[99]',
+        //至近
+        r_point_blank: '+2',
+        //近距離
+        r_short: '+2',
+        //中距離
+        r_middle: '+2',
+        //遠距離
+        r_long: '+2',
+        //貫通力
+        penetration: '+1',
+        //非貫通D
+        non_penetration_damage: '1D6+2',
+        //貫通D
+        penetration_damage: '2D6+4',
+        //射程
+        range: '50m',
+        //弾数
+        mag_round: '12',
+        //必要筋力
+        kinryoku: '両4/片5',
+        //CP
+        size: '1x1',
+        //消音LV
+        silence: '4',
+        //本体価格
+        item_value: '$2100[14]',
+        //マガジン価格
+        mag_value: '$10[10]',
+        //弾薬
+        cartridge: '9x19mm',
+        //全長
+        item_width: '168mm',
+        //重量
+        item_weight: '688g',
+        //機能
+        efficiency: [],
+        //説明
+        note: '護身用や法執行機関のコンシールド（秘匿携行）向けの小型自動拳銃のフルサイズモデル(それでも小さい)。弾薬は強装弾の+P弾を使用する。これはTTIによるカスタム品で命中力が向上している。'
+    },
+    {
+        //アイテム名
         item_name: '',
         //画像
         items_avatar: '',
@@ -613,9 +655,7 @@ export const ITEMS: ItemData[] = [
         //重量
         item_weight: 'g',
         //機能
-        efficiency: [
-            ''
-        ],
+        efficiency: [],
         //説明
         note: ''
     },
