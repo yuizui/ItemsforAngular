@@ -45,7 +45,7 @@ export const ITEMS: ItemData[] = [
         //アイテム名
         item_name: 'AAC MPW 300 BLACKOUT',
         //画像
-        items_avatar: 'src\assets\img\Rifle\AAC_MPW_300_BLACKOUT.jpg',
+        items_avatar: 'assets/img/Rifle/AAC_MPW_300_BLACKOUT.jpg',
         //種別
         classify: 'ライフル',
         //射撃モード
@@ -128,7 +128,7 @@ export const ITEMS: ItemData[] = [
         //アイテム名
         item_name: 'FN_SCAR-H',
         //画像
-        items_avatar: 'src\assets\img\Rifle\FN_SCARH.jpg',
+        items_avatar: 'assets/img/Rifle/FN_SCARH.jpg',
         //種別
         classify: 'ライフル',
         //射撃モード
@@ -178,7 +178,7 @@ export const ITEMS: ItemData[] = [
         //アイテム名
         item_name: 'HK HK416A5',
         //画像
-        items_avatar: 'src\assets\img\Rifle\HK_HK416A5.jpg',
+        items_avatar: 'assets/img/Rifle/HK_HK416A5.jpg',
         //種別
         classify: 'ライフル',
         //射撃モード
@@ -228,7 +228,7 @@ export const ITEMS: ItemData[] = [
         //アイテム名
         item_name: 'HK HK416C',
         //画像
-        items_avatar: 'src\assets\img\Rifle\HK_HK416C.jpg',
+        items_avatar: 'assets/img/Rifle/HK_HK416C.jpg',
         //種別
         classify: 'ライフル',
         //射撃モード
@@ -278,7 +278,7 @@ export const ITEMS: ItemData[] = [
         //アイテム名
         item_name: 'HK HK417',
         //画像
-        items_avatar: 'src\assets\img\Rifle\HK_HK417.png',
+        items_avatar: 'assets/img/Rifle/HK_HK417.png',
         //種別
         classify: 'ライフル',
         //射撃モード
@@ -328,7 +328,7 @@ export const ITEMS: ItemData[] = [
         //アイテム名
         item_name: 'HK M110A1',
         //画像
-        items_avatar: 'src\assets\img\Rifle\HK_M110A1.jpg',
+        items_avatar: 'assets/img/Rifle/HK_M110A1.jpg',
         //種別
         classify: 'ライフル',
         //射撃モード
