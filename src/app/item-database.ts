@@ -42,6 +42,59 @@ export const ITEMS: ItemData[] = [
     },
     // ここから記入
     {
+        //アイテム名
+        item_name: 'AAC MPW 300 BLACKOUT',
+        //画像
+        items_avatar: 'src\assets\img\Rifle\AAC_MPW_300_BLACKOUT.jpg',
+        //種別
+        classify: 'ライフル',
+        //射撃モード
+        fire_mode: 'S',
+        //信頼性
+        reliability: '00[99]',
+        //至近
+        r_point_blank: '-40※',
+        //近距離
+        r_short: '-20※',
+        //中距離
+        r_middle: '-10',
+        //遠距離
+        r_long: '-30',
+        //貫通力
+        penetration: '+5',
+        //非貫通D
+        non_penetration_damage: '2D6+5',
+        //貫通D
+        penetration_damage: '3D6+6',
+        //射程
+        range: '300m',
+        //弾数
+        mag_round: '30',
+        //必要筋力
+        kinryoku: '両6/片-',
+        //CP
+        size: '2x5',
+        //消音LV
+        silence: '5',
+        //本体価格
+        item_value: '$3,300[13]',
+        //マガジン価格
+        mag_value: '$100[12]',
+        //弾薬
+        cartridge: '7.62mm×35(.300 AAC Blackout)',
+        //全長
+        item_width: '805mm',
+        //重量
+        item_weight: '4,010g',
+        //機能
+        efficiency: ['サプレッサー装着不可。音の方向感知の必要達成地+5'
+        ,'HP・AP・亜音速弾使用不可',
+        '代わりに弾倉は通常の他、VM弾が選択できる。VM弾はこのデータから消音-2で貫通+2。',
+        '※次R同一目標攻撃時+15%'],
+        //説明
+        note: 'AAC社の多目的ライフル。MP5SDを代替する目的で開発され、.300 AAC Blackout(300 BLK)用の12.5インチバレルとAAC 762-SDN-6サイレンサーが標準装備されている。新弾薬の300 BLKは高威力・高貫通力・静音性を兼ね備えるものの、非対応の銃に装填・射撃できてしまい、暴発事故を起こしている。'
+    },
+    {
         item_name: 'AK-12 (2020 model)',
         items_avatar: 'assets/img/Rifle/ak12.png',
         classify: 'ライフル',
@@ -70,6 +123,283 @@ export const ITEMS: ItemData[] = [
             '★片手-20%'
         ],
         note: 'AKシリーズの新型。フリーフローティングバレルに変更され、遠距離の精度が向上した。一部のパーツがM4/M16と互換性がある。最新のものはフォールディングストックが採用され、運用しやすくなった。'
+    },
+    {
+        //アイテム名
+        item_name: 'FN_SCAR-H',
+        //画像
+        items_avatar: 'src\assets\img\Rifle\FN_SCARH.jpg',
+        //種別
+        classify: 'ライフル',
+        //射撃モード
+        fire_mode: 'S/F',
+        //信頼性
+        reliability: '00[99]',
+        //至近
+        r_point_blank: '-45※',
+        //近距離
+        r_short: '-25※',
+        //中距離
+        r_middle: '-5',
+        //遠距離
+        r_long: '-25',
+        //貫通力
+        penetration: '+7',
+        //非貫通D
+        non_penetration_damage: '2D6+6',
+        //貫通D
+        penetration_damage: '3D6+7',
+        //射程
+        range: '300m',
+        //弾数
+        mag_round: '20',
+        //必要筋力
+        kinryoku: '両6/片8★',
+        //CP
+        size: '2x4',
+        //消音LV
+        silence: '2',
+        //本体価格
+        item_value: '$1,300[11]',
+        //マガジン価格
+        mag_value: '$30[9]',
+        //弾薬
+        cartridge: '7.62mm×51',
+        //全長
+        item_width: '777/863mm',
+        //重量
+        item_weight: '3,510g',
+        //機能
+        efficiency: ['フル-10%','狙撃-10%','※次R同一目標攻撃時+20%','★片手-20%'],
+        //説明
+        note: '強力な7.62mmを使用する特殊部隊用突撃銃。ストックが折り畳めるため嵩張らない。'
+    },
+    {
+        //アイテム名
+        item_name: 'HK HK416A5',
+        //画像
+        items_avatar: 'src\assets\img\Rifle\HK_HK416A5.jpg',
+        //種別
+        classify: 'ライフル',
+        //射撃モード
+        fire_mode: 'S/F',
+        //信頼性
+        reliability: '□[00]',
+        //至近
+        r_point_blank: '-30※',
+        //近距離
+        r_short: '-15※',
+        //中距離
+        r_middle: '0',
+        //遠距離
+        r_long: '-25',
+        //貫通力
+        penetration: '+5',
+        //非貫通D
+        non_penetration_damage: '2D6+3',
+        //貫通D
+        penetration_damage: '3D6+4',
+        //射程
+        range: '300m',
+        //弾数
+        mag_round: '30',
+        //必要筋力
+        kinryoku: '両6/片-',
+        //CP
+        size: '2x5',
+        //消音LV
+        silence: '2',
+        //本体価格
+        item_value: '$2,500[13]',
+        //マガジン価格
+        mag_value: '$10[6]',
+        //弾薬
+        cartridge: '5.56mm×45',
+        //全長
+        item_width: '848/944mm',
+        //重量
+        item_weight: '3,560g',
+        //機能
+        efficiency: ['狙撃-20%','※次R同一目標攻撃時+15%'],
+        //説明
+        note: 'コンペ参加のために開発された全面改修型。操作性が向上した他、マガジンがM4規格に変更され共用可能になった。'
+    },
+    {
+        //アイテム名
+        item_name: 'HK HK416C',
+        //画像
+        items_avatar: 'src\assets\img\Rifle\HK_HK416C.jpg',
+        //種別
+        classify: 'ライフル',
+        //射撃モード
+        fire_mode: 'S/F',
+        //信頼性
+        reliability: '99[98]',
+        //至近
+        r_point_blank: '-25※',
+        //近距離
+        r_short: '-10※',
+        //中距離
+        r_middle: '-5',
+        //遠距離
+        r_long: '-40',
+        //貫通力
+        penetration: '+5',
+        //非貫通D
+        non_penetration_damage: '2D6+2',
+        //貫通D
+        penetration_damage: '3D6+3',
+        //射程
+        range: '200m',
+        //弾数
+        mag_round: '30',
+        //必要筋力
+        kinryoku: '両6/片8★',
+        //CP
+        size: '2x3',
+        //消音LV
+        silence: '2',
+        //本体価格
+        item_value: '$2,000[13]',
+        //マガジン価格
+        mag_value: '$10[6]',
+        //弾薬
+        cartridge: '5.56mm×45',
+        //全長
+        item_width: '560/690mm',
+        //重量
+        item_weight: '2,960g',
+        //機能
+        efficiency: ['狙撃-40%','※次R同一目標攻撃時+15%','★片手-20%'],
+        //説明
+        note: 'HK416を8.9インチ銃身とワイヤーストックに換装したいわゆるCQBモデル。狭所での取り回しは良いが、信頼性に問題がある。'
+    },
+    {
+        //アイテム名
+        item_name: 'HK HK417',
+        //画像
+        items_avatar: 'src\assets\img\Rifle\HK_HK417.png',
+        //種別
+        classify: 'ライフル',
+        //射撃モード
+        fire_mode: 'S/F',
+        //信頼性
+        reliability: '□[99]',
+        //至近
+        r_point_blank: '-40※',
+        //近距離
+        r_short: '-20※',
+        //中距離
+        r_middle: '0',
+        //遠距離
+        r_long: '-25',
+        //貫通力
+        penetration: '+7',
+        //非貫通D
+        non_penetration_damage: '2D6+6',
+        //貫通D
+        penetration_damage: '3D6+7',
+        //射程
+        range: '400m',
+        //弾数
+        mag_round: '20',
+        //必要筋力
+        kinryoku: '両6/片-',
+        //CP
+        size: '2x5',
+        //消音LV
+        silence: '2',
+        //本体価格
+        item_value: '$2,500[13]',
+        //マガジン価格
+        mag_value: '$10[6]',
+        //弾薬
+        cartridge: '7.62mm×51',
+        //全長
+        item_width: '905/985mm',
+        //重量
+        item_weight: '4,250g',
+        //機能
+        efficiency: ['フル-10%','狙撃-15%','※次R同一目標攻撃時+15%'],
+        //説明
+        note: 'HK416の7.62mm×51弾モデル。7.62mm×51弾クラスのバトルライフルの有用性が再評価されたことから開発された。G3と比べ、遠距離射撃時における精度が不足している。'
+    },
+    {
+        //アイテム名
+        item_name: 'HK M110A1',
+        //画像
+        items_avatar: 'src\assets\img\Rifle\HK_M110A1.jpg',
+        //種別
+        classify: 'ライフル',
+        //射撃モード
+        fire_mode: 'S',
+        //信頼性
+        reliability: '□[00]',
+        //至近
+        r_point_blank: '-50※',
+        //近距離
+        r_short: '-30※',
+        //中距離
+        r_middle: '-10',
+        //遠距離
+        r_long: '-10',
+        //貫通力
+        penetration: '+7',
+        //非貫通D
+        non_penetration_damage: '2D6+6',
+        //貫通D
+        penetration_damage: '3D6+7',
+        //射程
+        range: '600m',
+        //弾数
+        mag_round: '20',
+        //必要筋力
+        kinryoku: '両6/片-',
+        //CP
+        size: '2x4',
+        //消音LV
+        silence: '2',
+        //本体価格
+        item_value: '$2,500[13]',
+        //マガジン価格
+        mag_value: '$10[6]',
+        //弾薬
+        cartridge: '7.62mm×51',
+        //全長
+        item_width: '905mm',
+        //重量
+        item_weight: '4,100g',
+        //機能
+        efficiency: ['狙撃-0%','※次R同一目標攻撃時+15%'],
+        //説明
+        note: 'アメリカ陸軍で使用されていたM110(SR25)には構造的な問題があり、また市街戦では全長と重量が過大であると言われていた。そこで白羽の矢が立ったのはHK社のHK417であり、軽量小型化改修が加えられたものがM110A1として採用された。'
+    },
+    {
+        /*アイテム名*/item_name: 'HK SL9SD',
+        /*画像*/items_avatar: 'ライフル',
+        /*種別*/classify: 'ライフル',
+        /*射撃モード*/fire_mode: 'S',
+        /*信頼性*/reliability: '□[00]',
+        /*至近*/r_point_blank: '-45※',
+        /*近距離*/r_short: '-25※',
+        /*中距離*/r_middle: '-5',
+        /*遠距離*/r_long: '-20',
+        /*貫通力*/penetration: '+7',
+        /*非貫通D*/non_penetration_damage: '2D6+6',
+        /*貫通D*/penetration_damage: '3D6+7',
+        /*射程*/range: '500m',
+        /*弾数*/mag_round: '10',
+        /*必要筋力*/kinryoku: '両6/片-',
+        /*CP*/size: '2x6',
+        /*消音LV*/silence: '5',
+        /*本体価格*/item_value: '$2,500[13]',
+        /*マガジン価格*/mag_value: '$110[13]',
+        /*弾薬*/cartridge: '7.62mm×37',
+        /*全長*/item_width: '980mm',
+        /*重量*/item_weight: '3,950g',
+        /*機能*/efficiency: ['狙撃+0%','サプレッサー装着不可。音の方向感知-20%、必要達成値+5',
+        'HP・AP・亜音速弾使用不可','※次R同一目標攻撃時+20%'],
+        /*説明*/note: 'H&K社が民間モデルSL8をベースに開発した消音狙撃銃。サプレッサーを標準装備しており、専用の7.62x37mm亜音速弾を使用することで消音効果を高めている。SL8をベースにしたとの通り（H&K G36の民生用モデル）の派生型の1つであり、SR9とは無関係である。'
     },
     {
         item_name: 'AF AF2011',
@@ -563,7 +893,7 @@ export const ITEMS: ItemData[] = [
         //アイテム名
         item_name: 'SIG P365XL',
         //画像
-        items_avatar: 'sassets/img/Handgun/SIG_P365XL.jpeg',
+        items_avatar: 'assets/img/Handgun/SIG_P365XL.jpeg',
         //種別
         classify: 'ハンドガン',
         //射撃モード
@@ -610,54 +940,30 @@ export const ITEMS: ItemData[] = [
         note: '護身用や法執行機関のコンシールド（秘匿携行）向けの小型自動拳銃のフルサイズモデル(それでも小さい)。弾薬は強装弾の+P弾を使用する。これはTTIによるカスタム品で命中力が向上している。'
     },
     {
-        //アイテム名
-        item_name: '',
-        //画像
-        items_avatar: '',
-        //種別
-        classify: '',
-        //射撃モード
-        fire_mode: '',
-        //信頼性
-        reliability: '[]',
-        //至近
-        r_point_blank: '',
-        //近距離
-        r_short: '',
-        //中距離
-        r_middle: '',
-        //遠距離
-        r_long: '',
-        //貫通力
-        penetration: '+',
-        //非貫通D
-        non_penetration_damage: 'D6',
-        //貫通D
-        penetration_damage: 'D6',
-        //射程
-        range: 'm',
-        //弾数
-        mag_round: '',
-        //必要筋力
-        kinryoku: '両/片',
-        //CP
-        size: 'x',
-        //消音LV
-        silence: '',
-        //本体価格
-        item_value: '$[]',
-        //マガジン価格
-        mag_value: '$[]',
-        //弾薬
-        cartridge: '',
-        //全長
-        item_width: 'mm',
-        //重量
-        item_weight: 'g',
-        //機能
-        efficiency: [],
-        //説明
-        note: ''
+        /*アイテム名*/item_name: '',
+        /*画像*/items_avatar: '',
+        /*種別*/classify: '',
+        /*射撃モード*/fire_mode: '',
+        /*信頼性*/reliability: '[]',
+        /*至近*/r_point_blank: '',
+        /*近距離*/r_short: '',
+        /*中距離*/r_middle: '',
+        /*遠距離*/r_long: '',
+        /*貫通力*/penetration: '+',
+        /*非貫通D*/non_penetration_damage: 'D6+',
+        /*貫通D*/penetration_damage: 'D6+',
+        /*射程*/range: 'm',
+        /*弾数*/mag_round: '',
+        /*必要筋力*/kinryoku: '両/片',
+        /*CP*/size: 'x',
+        /*消音LV*/silence: '',
+        /*本体価格*/item_value: '$[]',
+        /*マガジン価格*/mag_value: '$[]',
+        /*弾薬*/cartridge: '',
+        /*全長*/item_width: 'mm',
+        /*重量*/item_weight: 'g',
+        /*機能*/efficiency: [],
+        /*説明*/note: ''
     },
 
 ]
