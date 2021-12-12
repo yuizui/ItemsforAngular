@@ -259,7 +259,7 @@ export const ITEMS: ItemData[] = [
     },
     {
         /*アイテム名*/item_name: 'SA M14 EBR',
-        /*画像*/items_avatar: 'src/assets/img/Rifle/SA_M14_EBR.jpg',
+        /*画像*/items_avatar: 'assets/img/Rifle/SA_M14_EBR.jpg',
         /*種別*/classify: 'ライフル',
         /*射撃モード*/fire_mode: 'S/F',
         /*信頼性*/reliability: '□[00]',
@@ -285,7 +285,7 @@ export const ITEMS: ItemData[] = [
     },
     {
         /*アイテム名*/item_name: 'SA SRSS Bulldog',
-        /*画像*/items_avatar: 'src/assets/img/Rifle/SA_SRSS_Bulldog.jpg',
+        /*画像*/items_avatar: 'assets/img/Rifle/SA_SRSS_Bulldog.jpg',
         /*種別*/classify: 'ライフル',
         /*射撃モード*/fire_mode: 'S/F',
         /*信頼性*/reliability: '□[00]',
@@ -311,7 +311,7 @@ export const ITEMS: ItemData[] = [
     },
     {
         /*アイテム名*/item_name: 'Winchester Model 1895 Modernised',
-        /*画像*/items_avatar: 'src/assets/img/Rifle/Winchester_1895_modernised.jpg',
+        /*画像*/items_avatar: 'assets/img/Rifle/Winchester_1895_modernised.jpg',
         /*種別*/classify: 'ライフル',
         /*射撃モード*/fire_mode: 'Lever-action',
         /*信頼性*/reliability: '00[99]',
