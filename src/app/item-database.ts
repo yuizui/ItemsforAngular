@@ -42,7 +42,7 @@ export const ITEMS: ItemData[] = [
     },
     // ここから記入
 
-    // #region アサルトライフル
+    // #region ライフル
     //AAC MPW 300 BLACKOUT
     {
         /*アイテム名*/item_name: 'AAC MPW 300 BLACKOUT',

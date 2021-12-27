@@ -50,13 +50,7 @@ export class AppComponent implements OnInit {
       else if(items.classify == 'ハンドガン'){
         this.sidearms.push(items);
       }
-      // #region 重火器格納
-      /*
-      else if(items.classify == '重火器'){
-        this.heavyweapons.push(items);
-      }
-      */
-     // #endregion
+      
       else if(items.classify == 'LMG'){
         this.Lmgs.push(items);
       }
@@ -69,6 +63,13 @@ export class AppComponent implements OnInit {
       else{
         this.others.push(items);
       }
+      // #region 重火器格納
+      /*
+      else if(items.classify == '重火器'){
+        this.heavyweapons.push(items);
+      }
+      */
+     // #endregion
     }
   }
 }
