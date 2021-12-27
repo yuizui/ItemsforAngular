@@ -239,6 +239,33 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: ['狙撃-0%','※次R同一目標攻撃時+15%'],
         /*説明*/note:  'アメリカ陸軍で使用されていたM110(SR25)には構造的な問題があり、また市街戦では全長と重量が過大であると言われていた。そこで白羽の矢が立ったのはHK社のHK417であり、軽量小型化改修が加えられたものがM110A1として採用された。'
     },
+    //Remington R5 RGP
+    {
+        /*アイテム名*/item_name: 'Remington R5 RGP',
+        /*画像*/items_avatar: 'assets/img/Rifle/Remington_R5_RGP.jpg',
+        /*種別*/classify: 'ライフル',
+        /*射撃モード*/fire_mode: 'S/F',
+        /*信頼性*/reliability: '□[00]',
+        /*至近*/r_point_blank: '-30※',
+        /*近距離*/r_short: '-15※',
+        /*中距離*/r_middle: '0',
+        /*遠距離*/r_long: '-25',
+        /*貫通力*/penetration: '+5',
+        /*非貫通D*/non_penetration_damage: '2D6+3',
+        /*貫通D*/penetration_damage: '3D6+4',
+        /*射程*/range: '250m',
+        /*弾数*/mag_round: '30',
+        /*必要筋力*/kinryoku: '両6/片8★',
+        /*CP*/size: '2×4',
+        /*消音LV*/silence: '2',
+        /*本体価格*/item_value: '$900[9]',
+        /*マガジン価格*/mag_value: '$10[6]',
+        /*弾薬*/cartridge: '5.56mm×45',
+        /*全長*/item_width: '777/863mm',
+        /*重量*/item_weight: '3,160g',
+        /*機能*/efficiency: ['狙撃-30%','※次R同一目標攻撃時+20%','★片手-20%'],
+        /*説明*/note:  'ショートストロークのガスピストンを採用したARクローン。高い信頼性と耐久性を持ち、分解も簡単。'
+    },
     //SA M14 EBR
     {
         /*アイテム名*/item_name: 'SA M14 EBR',
@@ -292,6 +319,33 @@ export const ITEMS: ItemData[] = [
         /*重量*/item_weight: '4,560g',
         /*機能*/efficiency: ['狙撃-20%','フル-10%','※次R同一目標攻撃時+15%','★片手-20%'],
         /*説明*/note: '7.62mmを使用するM14を短小にしたライフル。動きや操作性に支障がなく、光学機器などのアタッチメントを装着できるライフルが欲しいという要望から、引退した米国海兵隊の軍曹によって開発された。'
+    },
+    //Steyr_Mannlicher_Steyr_AUG_9mm
+    {
+        /*アイテム名*/item_name: 'Steyr Mannlicher Steyr AUG 9mm',
+        /*画像*/items_avatar: 'assets/img/Rifle/Steyr_Mannlicher_Steyr_AUG_9mm.jpg',
+        /*種別*/classify: 'ライフル',
+        /*射撃モード*/fire_mode: 'S/F',
+        /*信頼性*/reliability: '00[99]',
+        /*至近*/r_point_blank: '-20',
+        /*近距離*/r_short: '0',
+        /*中距離*/r_middle: '0',
+        /*遠距離*/r_long: '-40',
+        /*貫通力*/penetration: '+2',
+        /*非貫通D*/non_penetration_damage: '1D6+2',
+        /*貫通D*/penetration_damage: '2D6+4',
+        /*射程*/range: '200m',
+        /*弾数*/mag_round: '25',
+        /*必要筋力*/kinryoku: '両4/片5',
+        /*CP*/size: '2×4(+1×1)',
+        /*消音LV*/silence: '3',
+        /*本体価格*/item_value: '$900[9]',
+        /*マガジン価格*/mag_value: '$6[6]',
+        /*弾薬*/cartridge: '',
+        /*全長*/item_width: '665mm',
+        /*重量*/item_weight: '3,300g',
+        /*機能*/efficiency: ['スコープLv1(1×1)標準装備'],
+        /*説明*/note: 'AUGはアルメー・ウニヴァザール・ゲヴェーア（Armee Universal Gewehr、軍用汎用小銃の意）の頭文字に由来する市販名。これは9mm弾を使用する短機関銃モデルである。'
     },
     //Winchester Model 1895 Modernised
     {
@@ -354,6 +408,37 @@ export const ITEMS: ItemData[] = [
     // #endregion Sライフル
 
     // #region 対物ライフル
+    //Barret_XM500
+    {
+        /*アイテム名*/item_name: 'Barret XM500',
+        /*画像*/items_avatar: 'assets/img/amRifle/Barret_XM500.png',
+        /*種別*/classify: '対物ライフル',
+        /*射撃モード*/fire_mode: 'S',
+        /*信頼性*/reliability: '00[99]',
+        /*至近*/r_point_blank: '-60※',
+        /*近距離*/r_short: '-40※',
+        /*中距離*/r_middle: '-30',
+        /*遠距離*/r_long: '-20',
+        /*貫通力*/penetration: '+12',
+        /*非貫通D*/non_penetration_damage: '3D6+15',
+        /*貫通D*/penetration_damage: '5D6+30',
+        /*射程*/range: '2000m',
+        /*弾数*/mag_round: '10',
+        /*必要筋力*/kinryoku: '両14/片-',
+        /*CP*/size: '5×6(+1×3)',
+        /*消音LV*/silence: '1',
+        /*本体価格*/item_value: '$8000[15]',
+        /*マガジン価格*/mag_value: '$30[9]',
+        /*弾薬*/cartridge: '12.7mm×99',
+        /*全長*/item_width: '1,168mm',
+        /*重量*/item_weight: '11,800g',
+        /*機能*/efficiency: ['狙撃+10%',
+                            '※次R同一目標攻撃時+10%',
+                            'スコープLv3(1×3)、バイポッド内蔵',
+                            '対車両'],
+        /*説明*/note: 'M82/M107の発展後継型として開発され、2006年に発表されたアメリカ陸軍向けのプロトタイプ。作動方式がM82のショートリコイル方式からガスオペレーション・ロータリーボルトロック方式に変更されている。このため、銃身は固定されており、M82より精度的には有利な構造となっている。'
+    },
+    //Sero_International_GM6_Lynx
     {
         /*アイテム名*/item_name: 'Sero International GM6 Lynx',
         /*画像*/items_avatar: 'assets/img/amRifle/Sero_International_GM6_Lynx.jpg',
@@ -608,6 +693,33 @@ export const ITEMS: ItemData[] = [
                             'AR-15コンバージョンキット($3000[12])を購入することでフルオート発射が可能'],
         /*説明*/note: 'AR-15から派生したDiamondBack社のPDW。最近の流行に乗り、FN57のマガジンを使用する。小型軽量でハンドリングが軽快。ストックを外したモデルがハンドガンとして扱われる事もある。'
     },
+    //KBP Instrument Design Bureau PP-2000
+    {
+        /*アイテム名*/item_name: 'KBP Instrument Design Bureau PP-2000',
+        /*画像*/items_avatar: 'assets/img/SMG/KBP_Instrument_Design_Bureau_PP_2000.jpg',
+        /*種別*/classify: 'SMG',
+        /*射撃モード*/fire_mode: 'S/F',
+        /*信頼性*/reliability: '00[99]',
+        /*至近*/r_point_blank: '-20',
+        /*近距離*/r_short: '-2',
+        /*中距離*/r_middle: '-2',
+        /*遠距離*/r_long: '-40',
+        /*貫通力*/penetration: '+4',
+        /*非貫通D*/non_penetration_damage: '1D6+2',
+        /*貫通D*/penetration_damage: '2D6+4',
+        /*射程*/range: '200m',
+        /*弾数*/mag_round: '20/44',
+        /*必要筋力*/kinryoku: '両4/片5',
+        /*CP*/size: '2×2',
+        /*消音LV*/silence: '3',
+        /*本体価格*/item_value: '$2300[15]',
+        /*マガジン価格*/mag_value: '$10(20発)[15]/$20(40発)[15]',
+        /*弾薬*/cartridge: '9mm×19 7N31 +P+',
+        /*全長*/item_width: '340/555mm',
+        /*重量*/item_weight: '1,400g',
+        /*機能*/efficiency: ['装弾数40のマガジン使用時：[隠匿判定]-20%'],
+        /*説明*/note: '伝統的なブローバック方式の作動機構を持つ火器であり、重量は弾薬なしの状態で1.5kgと非常に軽量。9x19mmパラベラム弾用の薬室を持つうえ、ロシア製の新型弾薬である7N31 +P+徹甲弾を利用できるよう、特別な設計が施されている。'
+    },
     //KRISS Vector
     {
         /*アイテム名*/item_name: 'KRISS Vector',
@@ -669,7 +781,7 @@ export const ITEMS: ItemData[] = [
     //AF AF2011
     {
         item_name: 'AF AF2011',
-        items_avatar: 'assets/img/Handgun/AF2011.png',
+        items_avatar: 'assets/img/Handgun/AF_AF2011.jpg',
         classify: 'ハンドガン',
         fire_mode: '2',
         reliability: '00[99]',
@@ -742,7 +854,7 @@ export const ITEMS: ItemData[] = [
         /*消音LV*/silence: '4',
         /*本体価格*/item_value: '$900[11]',
         /*マガジン価格*/mag_value: '$10[10]',
-        /*弾薬*/cartridge: '9mmx19',
+        /*弾薬*/cartridge: '9mm×19',
         /*全長*/item_width: '211mm',
         /*重量*/item_weight: '1,245g',
         /*機能*/efficiency: [],
@@ -769,7 +881,7 @@ export const ITEMS: ItemData[] = [
         /*消音LV*/silence: '4',
         /*本体価格*/item_value: '$600[14]',
         /*マガジン価格*/mag_value: '$10[10]',
-        /*弾薬*/cartridge: '9mmx19',
+        /*弾薬*/cartridge: '9mm×19',
         /*全長*/item_width: '240mm',
         /*重量*/item_weight: '1,170g',
         /*機能*/efficiency: [
@@ -798,7 +910,7 @@ export const ITEMS: ItemData[] = [
         /*消音LV*/silence: '4',
         /*本体価格*/item_value: '$500[20]',
         /*マガジン価格*/mag_value: '$10[10]',
-        /*弾薬*/cartridge: '9mmx19',
+        /*弾薬*/cartridge: '9mm×19',
         /*全長*/item_width: '259mm',
         /*重量*/item_weight: '946g',
         /*機能*/efficiency: [
@@ -806,6 +918,33 @@ export const ITEMS: ItemData[] = [
             '入手にはGMの許可が必要'
         ],
         /*説明*/note:  '9mmパラよりも強力な.40SWを使用するM92の派生型。強烈な反動をコントロールするためのマウントレイル付スタビライザーと４ポーテッド・コンペンセイターが標準装備されている。ロングマガジンを使用するため、継戦能力に優れる。'
+    },
+    //Beretta Px4 Storm
+    {
+        /*アイテム名*/item_name: 'Beretta Px4 Storm',
+        /*画像*/items_avatar: 'assets/img/Handgun/Beretta_Px4_Storm.jpg',
+        /*種別*/classify: 'ハンドガン',
+        /*射撃モード*/fire_mode: 'S',
+        /*信頼性*/reliability: '00[99]',
+        /*至近*/r_point_blank: '0',
+        /*近距離*/r_short: '0',
+        /*中距離*/r_middle: '-40',
+        /*遠距離*/r_long: '×',
+        /*貫通力*/penetration: '±0',
+        /*非貫通D*/non_penetration_damage: '1D6+1',
+        /*貫通D*/penetration_damage: '2D6+3',
+        /*射程*/range: '50m',
+        /*弾数*/mag_round: '17',
+        /*必要筋力*/kinryoku: '両5/片6',
+        /*CP*/size: '1×2',
+        /*消音LV*/silence: '4',
+        /*本体価格*/item_value: '$240[5]',
+        /*マガジン価格*/mag_value: '$3[5]',
+        /*弾薬*/cartridge: '9mm×19',
+        /*全長*/item_width: '192mm',
+        /*重量*/item_weight: '785g',
+        /*機能*/efficiency: [],
+        /*説明*/note:  'ベレッタ 92をはじめとした従来のベレッタ社製の拳銃で広く採用されていたプロップアップ式ショートリコイルでは、銃身下部左右のロッキングブロックによる閉鎖機構上、強度、小型化に限界があり、.40S&W弾（ベレッタM96）よりも大きい口径は用意できなかった。また、サブ・コンパクトサイズまでサイズダウンする事も難しかった。それらを受けて当銃はM8000のようなロテーティング・バレル（回転銃身式）を採用し、全体のサイズはセミ・コンパクトサイズとしている。 '
     },
     //Cz-75 Fullauto
     {
@@ -1000,6 +1139,33 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: [],
         /*説明*/note:  '護身用や法執行機関のコンシールド（秘匿携行）向けの小型自動拳銃のフルサイズモデル(それでも小さい)。弾薬は強装弾の+P弾を使用する。これはTTIによるカスタム品で命中力が向上している。'
     },
+    //Sturm,Ruger Ruger LCP
+    {
+        /*アイテム名*/item_name: 'Sturm,Ruger Ruger LCP',
+        /*画像*/items_avatar: 'assets/img/Handgun/Sturm_Ruger_Ruger_LCP.jpg',
+        /*種別*/classify: 'ハンドガン',
+        /*射撃モード*/fire_mode: 'S',
+        /*信頼性*/reliability: '00[99]',
+        /*至近*/r_point_blank: '-2',
+        /*近距離*/r_short: '-2',
+        /*中距離*/r_middle: '-45',
+        /*遠距離*/r_long: '×',
+        /*貫通力*/penetration: '±0',
+        /*非貫通D*/non_penetration_damage: '1D6',
+        /*貫通D*/penetration_damage: '2D6+2',
+        /*射程*/range: '50m',
+        /*弾数*/mag_round: '6',
+        /*必要筋力*/kinryoku: '両4/片5',
+        /*CP*/size: '1×1',
+        /*消音LV*/silence: '4',
+        /*本体価格*/item_value: '$360[6]',
+        /*マガジン価格*/mag_value: '$3[6]',
+        /*弾薬*/cartridge: '9mm×17',
+        /*全長*/item_width: '131mm',
+        /*重量*/item_weight: '266g',
+        /*機能*/efficiency: ['[隠匿判定]+10%'],
+        /*説明*/note:  '「LCP」とは、Lightweight Compact Pistol の頭文字を取ったもの。LCPはその名の通り小型軽量を旨とし、フレームにガラス強化ナイロンを採用。.380ACP弾が撃てる拳銃ではKel-Tec社製のP3ATと並び、最小の部類に入る。 '
+    },
     // #endregion
 
     // #region LMG
@@ -1150,6 +1316,38 @@ export const ITEMS: ItemData[] = [
     },
     // #endregion
 
+    // #region ランチャー
+    //H&K GLM
+    {
+        /*アイテム名*/item_name: 'H&K GLM',
+        /*画像*/items_avatar: 'assets/img/Luncher/HK_GLM.jpg',
+        /*種別*/classify: 'ランチャー',
+        /*射撃モード*/fire_mode: 'Double-action',
+        /*信頼性*/reliability: '□[00]',
+        /*至近*/r_point_blank: '×',
+        /*近距離*/r_short: '-25',
+        /*中距離*/r_middle: '-35',
+        /*遠距離*/r_long: '-40',
+        /*貫通力*/penetration: '-',
+        /*非貫通D*/non_penetration_damage: '3D6',
+        /*貫通D*/penetration_damage: '5D6+3',
+        /*射程*/range: '300m',
+        /*弾数*/mag_round: '1',
+        /*必要筋力*/kinryoku: '(両6/片8)',
+        /*CP*/size: '2×2',
+        /*消音LV*/silence: '1',
+        /*本体価格*/item_value: '$800[12]',
+        /*マガジン価格*/mag_value: '$20(弾のみ1発)[9]',
+        /*弾薬*/cartridge: '40mm Grenade',
+        /*全長*/item_width: '350mm',
+        /*重量*/item_weight: '1,500g',
+        /*機能*/efficiency: ['中心半径5m：[貫通D]/有効半径10m：[非貫通D]',
+                            'ピカニティ・レールを持つライフルに装着可。装着時：補器(下)',
+                            '部位狙い不可'],
+        /*説明*/note: 'M203は銃身を前にスライドさせて薬室を開放する構造のため、装填できる弾薬の長さに制限があったが、M320はいかなる長さの弾薬も使用可能である。特に非致死性の弾薬は長いものが多い。セーフティレバーは左右両側から操作できる。アメリカ軍ではM320と呼称され、これはH&Kでの型式名である。'
+    },
+    // #endregion 
+
     // #region 武器戦闘
     {
         /*アイテム名*/item_name: '両手剣',
@@ -1180,8 +1378,8 @@ export const ITEMS: ItemData[] = [
                             '抜き打ちルール適用不可(居合は可能)',
                             '※半径2m範囲攻撃',
                             '盾として利用することが可能',
-                            '盾による遮蔽：10×[武器戦闘]Lv%、装甲値：12、防御値：3'],
-        /*説明*/note: '両手剣。銃が普及した現代においては無用の長物だが、その破壊力は現代の装甲には驚異となる。画像とデータは一例としてアリーン・マーズが使用している両手剣であり、このデータは日本の大太刀なども含むため全長・重量はデータの限りではない。'
+                            '盾による遮蔽：10×[武器戦闘]Lv% 装甲値：12 防御値：3'],
+        /*説明*/note: '両手剣。銃が普及した現代においては無用の長物だが、その破壊力は現代の装甲には驚異となる。このデータは日本の大太刀なども含むため全長・重量はこのデータの限りではない。画像は一例としてアリーン・マーズが使用している両手剣である。'
     },
     // #endregion 
 
