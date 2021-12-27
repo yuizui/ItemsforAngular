@@ -405,7 +405,7 @@ export const ITEMS: ItemData[] = [
         'HP・AP・亜音速弾使用不可','※次R同一目標攻撃時+20%'],
         /*説明*/note: 'H&K社が民間モデルSL8をベースに開発した消音狙撃銃。サプレッサーを標準装備しており、専用の7.62x37mm亜音速弾を使用することで消音効果を高めている。SL8をベースにしたとの通りH&K G36の民生用モデルの派生型の1つであり、SR9とは無関係である。'
     },
-    // #endregion Sライフル
+    // #endregion
 
     // #region 対物
     //Barret_XM500
@@ -442,7 +442,7 @@ export const ITEMS: ItemData[] = [
     {
         /*アイテム名*/item_name: 'Sero International GM6 Lynx',
         /*画像*/items_avatar: 'assets/img/amRifle/Sero_International_GM6_Lynx.jpg',
-        /*種別*/classify: '対物ライフル',
+        /*種別*/classify: '対物',
         /*射撃モード*/fire_mode: 'S',
         /*信頼性*/reliability: '00[99]',
         /*至近*/r_point_blank: '-60※',
