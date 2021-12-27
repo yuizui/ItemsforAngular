@@ -239,34 +239,6 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: ['狙撃-0%','※次R同一目標攻撃時+15%'],
         /*説明*/note:  'アメリカ陸軍で使用されていたM110(SR25)には構造的な問題があり、また市街戦では全長と重量が過大であると言われていた。そこで白羽の矢が立ったのはHK社のHK417であり、軽量小型化改修が加えられたものがM110A1として採用された。'
     },
-    //H&K SL9SD
-    {
-        /*アイテム名*/item_name: 'H&K SL9SD',
-        /*画像*/items_avatar: 'assets/img/Rifle/HK_SL9SD.png',
-        /*種別*/classify: 'ライフル',
-        /*射撃モード*/fire_mode: 'S',
-        /*信頼性*/reliability: '□[00]',
-        /*至近*/r_point_blank: '-45※',
-        /*近距離*/r_short: '-25※',
-        /*中距離*/r_middle: '-5',
-        /*遠距離*/r_long: '-20',
-        /*貫通力*/penetration: '+7',
-        /*非貫通D*/non_penetration_damage: '2D6+6',
-        /*貫通D*/penetration_damage: '3D6+7',
-        /*射程*/range: '500m',
-        /*弾数*/mag_round: '10',
-        /*必要筋力*/kinryoku: '両6/片-',
-        /*CP*/size: '2×6',
-        /*消音LV*/silence: '5',
-        /*本体価格*/item_value: '$2,500[13]',
-        /*マガジン価格*/mag_value: '$110[13]',
-        /*弾薬*/cartridge: '7.62mm×37',
-        /*全長*/item_width: '980mm',
-        /*重量*/item_weight: '3,950g',
-        /*機能*/efficiency: ['狙撃+0%','サプレッサー装着不可。音の方向感知-20%、必要達成値+5',
-        'HP・AP・亜音速弾使用不可','※次R同一目標攻撃時+20%'],
-        /*説明*/note: 'H&K社が民間モデルSL8をベースに開発した消音狙撃銃。サプレッサーを標準装備しており、専用の7.62x37mm亜音速弾を使用することで消音効果を高めている。SL8をベースにしたとの通りH&K G36の民生用モデルの派生型の1つであり、SR9とは無関係である。'
-    },
     //SA M14 EBR
     {
         /*アイテム名*/item_name: 'SA M14 EBR',
@@ -349,6 +321,68 @@ export const ITEMS: ItemData[] = [
         /*説明*/note: 'ウィンチェスター社が初めて箱型弾倉を採用したレバーアクション小銃。かのルーズベルトもライオンへの最良の銃として賞賛した。現在は若干のアレンジが加えられながら日本のミロクで製造されている。最新モデルはレイルシステムに対応している。'
     },
     // #endregion
+
+    // #region SR
+    //H&K SL9SD
+    {
+        /*アイテム名*/item_name: 'H&K SL9SD',
+        /*画像*/items_avatar: 'assets/img/sRifle/HK_SL9SD.png',
+        /*種別*/classify: 'SR',
+        /*射撃モード*/fire_mode: 'S',
+        /*信頼性*/reliability: '□[00]',
+        /*至近*/r_point_blank: '-45※',
+        /*近距離*/r_short: '-25※',
+        /*中距離*/r_middle: '-5',
+        /*遠距離*/r_long: '-20',
+        /*貫通力*/penetration: '+7',
+        /*非貫通D*/non_penetration_damage: '2D6+6',
+        /*貫通D*/penetration_damage: '3D6+7',
+        /*射程*/range: '500m',
+        /*弾数*/mag_round: '10',
+        /*必要筋力*/kinryoku: '両6/片-',
+        /*CP*/size: '2×6',
+        /*消音LV*/silence: '5',
+        /*本体価格*/item_value: '$2,500[13]',
+        /*マガジン価格*/mag_value: '$110[13]',
+        /*弾薬*/cartridge: '7.62mm×37',
+        /*全長*/item_width: '980mm',
+        /*重量*/item_weight: '3,950g',
+        /*機能*/efficiency: ['狙撃+0%','サプレッサー装着不可。音の方向感知-20%、必要達成値+5',
+        'HP・AP・亜音速弾使用不可','※次R同一目標攻撃時+20%'],
+        /*説明*/note: 'H&K社が民間モデルSL8をベースに開発した消音狙撃銃。サプレッサーを標準装備しており、専用の7.62x37mm亜音速弾を使用することで消音効果を高めている。SL8をベースにしたとの通りH&K G36の民生用モデルの派生型の1つであり、SR9とは無関係である。'
+    },
+    // #endregion Sライフル
+
+    // #region 対物ライフル
+    {
+        /*アイテム名*/item_name: 'Sero International GM6 Lynx',
+        /*画像*/items_avatar: 'assets/img/amRifle/Sero_International_GM6_Lynx.jpg',
+        /*種別*/classify: '対物ライフル',
+        /*射撃モード*/fire_mode: 'S',
+        /*信頼性*/reliability: '00[99]',
+        /*至近*/r_point_blank: '-60※',
+        /*近距離*/r_short: '-40※',
+        /*中距離*/r_middle: '-30',
+        /*遠距離*/r_long: '-20',
+        /*貫通力*/penetration: '+12',
+        /*非貫通D*/non_penetration_damage: '3D6+15',
+        /*貫通D*/penetration_damage: '5D6+30',
+        /*射程*/range: '1600m',
+        /*弾数*/mag_round: '5',
+        /*必要筋力*/kinryoku: '両10/片-',
+        /*CP*/size: '4×5',
+        /*消音LV*/silence: '1',
+        /*本体価格*/item_value: '$8000[15]',
+        /*マガジン価格*/mag_value: '$100[9]',
+        /*弾薬*/cartridge: '12.7mm×99',
+        /*全長*/item_width: '914/1,114mm',
+        /*重量*/item_weight: '10,500g',
+        /*機能*/efficiency: ['狙撃-0%',
+                            '※次R同一目標攻撃時+15%',
+                            '対車両'],
+        /*説明*/note: 'ハンガリー製対物ライフル。頻発する自動車による自爆テロを阻止する目的で造られた。空挺部隊の使用も考慮されているため他の対物ライフルと比べて小型で軽量、反動も小さい。その代わり精度は多少劣る。'
+    },
+    // #endregion 
 
     // #region ショットガン
     //Armscor VR80-A
@@ -1116,6 +1150,8 @@ export const ITEMS: ItemData[] = [
     },
     // #endregion
 
+    // #region 
+    // #endregion 
     //テンプレ
     {
         /*アイテム名*/item_name: '',
