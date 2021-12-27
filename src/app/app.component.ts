@@ -12,11 +12,14 @@ export class AppComponent implements OnInit {
 
   itemData = ITEMS;
   rifles: ItemData[] = [];
+  sRifles: ItemData[] = [];
+  amRifles: ItemData[] = [];
   shotguns: ItemData[] = [];
   smgs: ItemData[] = [];
   sidearms: ItemData[] = [];
   heavyweapons: ItemData[] = [];
   Lmgs: ItemData[] = [];
+  Launchers: ItemData[] = [];
   others: ItemData[] = [];
 
   constructor() { }
@@ -30,6 +33,12 @@ export class AppComponent implements OnInit {
       var items = this.itemData[i];
       if(items.classify == 'ライフル'){
         this.rifles.push(items);
+      }
+      if(items.classify == 'SR'){
+        this.sRifles.push(items);
+      }
+      if(items.classify == '対物ライフル'){
+        this.amRifles.push(items);
       }
       else if(items.classify == 'ショットガン'){
         this.shotguns.push(items);
@@ -45,6 +54,9 @@ export class AppComponent implements OnInit {
       }
       else if(items.classify == 'LMG'){
         this.Lmgs.push(items);
+      }
+      else if(items.classify == 'ランチャー'){
+        this.Launchers.push(items);
       }
       else{
         this.others.push(items);

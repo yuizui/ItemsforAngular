@@ -18,6 +18,10 @@
                     <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
                         onclick="location.href='#lblRifle'">ライフル</button></li>
                     <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
+                            onclick="location.href='#lblsRifle'">スナイパーライフル</button></li>
+                    <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
+                                onclick="location.href='#lblamRifle'">対物ライフル</button></li>
+                    <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
                         onclick="location.href='#lblHeavyWp'">重火器</button></li>
                     <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
                         onclick="location.href='#lblLmg'">LMG</button></li>
@@ -252,7 +256,7 @@
                     <col>
                 </colgroup>
                 <tbody class="border-top">
-                    <tr style="height: 22px;width: auto;">
+                    <tr style="height: 22px;">
                         <td colspan="2" style="height: 22px;">
                             <div>{{smgs.item_name}}</div>
                         </td>
@@ -858,7 +862,421 @@
                     </tr>
                 </tbody>
             </table>
-        </div>          
+        </div>  
+        
+        <div class="pb-5" id="lblsRifles">
+            <hr>
+        </div>
+        <h3>スナイパーライフル</h3>
+        <div *ngFor="let sRifles of sRifles">
+            <table class="table table-sm table-bordered">
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody class="border-top">
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{sRifles.item_name}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" colspan="2" style="height: 22px;">
+                            <div>ライフル</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 154px;">
+                        <td colspan="4" style="height: 154px;">
+                            <img class="img-fluid mx-auto d-block" src="{{sRifles.items_avatar}}">
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>モード</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{sRifles.fire_mode}}</div>
+                        </td>
+                        <td class="bg-secondary text-light">
+                            <div>信頼性</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{sRifles.reliability}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>~5m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>6~25m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>26~50m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>51~200m</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td style="height: 22px;">
+                            <div>至近</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>近</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>中</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>遠</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td style="height: 22px;">
+                            <div>{{sRifles.r_point_blank}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{sRifles.r_short}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{sRifles.r_middle}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{sRifles.r_long}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>貫通力</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{sRifles.penetration}}</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>非貫通</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{sRifles.non_penetration_damage}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>貫通</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{sRifles.penetration_damage}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>射程</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{sRifles.range}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>装弾数</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{sRifles.mag_round}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>必筋</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{sRifles.kinryoku}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>携行</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{sRifles.size}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>消音</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{sRifles.silence}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>価格</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{sRifles.item_value}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>弾倉価格</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{sRifles.mag_value}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>口径</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{sRifles.cartridge}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>全長</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{sRifles.item_width}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>重量</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{sRifles.item_weight}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 44px;">
+                        <td colspan="4" style="height: 44px;">
+                            <div *ngFor="let efficiency of sRifles.efficiency">
+                                <div>■{{efficiency}}</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="height: 44px;">
+                        <td colspan="4" style="height: 44px;">
+                            <div class="brake">
+                                {{sRifles.note}}
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pb-5" id="lblamRifles">
+            <hr>
+        </div>
+        <h3>対物ライフル</h3>
+        <div *ngFor="let amRifles of amRifles">
+            <table class="table table-sm table-bordered">
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody class="border-top">
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{amRifles.item_name}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" colspan="2" style="height: 22px;">
+                            <div>重火器</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 154px;">
+                        <td colspan="4" style="height: 154px;">
+                            <img class="img-fluid mx-auto d-block" src="{{amRifles.items_avatar}}">
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>モード</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{amRifles.fire_mode}}</div>
+                        </td>
+                        <td class="bg-secondary text-light">
+                            <div>信頼性</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{amRifles.reliability}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>~5m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>6~25m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>26~50m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>51~200m</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td style="height: 22px;">
+                            <div>至近</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>近</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>中</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>遠</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td style="height: 22px;">
+                            <div>{{amRifles.r_point_blank}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{amRifles.r_short}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{amRifles.r_middle}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{amRifles.r_long}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>貫通力</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{amRifles.penetration}}</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>非貫通</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{amRifles.non_penetration_damage}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>貫通</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{amRifles.penetration_damage}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>射程</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{amRifles.range}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>装弾数</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{amRifles.mag_round}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>必筋</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{amRifles.kinryoku}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>携行</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{amRifles.size}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>消音</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{amRifles.silence}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>価格</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{amRifles.item_value}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>弾倉価格</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{amRifles.mag_value}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>口径</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{amRifles.cartridge}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>全長</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{amRifles.item_width}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>重量</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{amRifles.item_weight}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 44px;">
+                        <td colspan="4" style="height: 44px;">
+                            <div *ngFor="let efficiency of amRifles.efficiency">
+                                <div>■{{efficiency}}</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="height: 44px;">
+                        <td colspan="4" style="height: 44px;">
+                            <div class="brake">
+                                {{amRifles.note}}
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <div class="pb-5" id="lblHeavyWp">
             <hr>
@@ -1267,6 +1685,213 @@
                         <td colspan="4" style="height: 44px;">
                             <div class="brake">
                                 {{Lmgs.note}}
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pb-5" id="lblLauncherWp">
+            <hr>
+        </div>
+        <h3>ランチャー</h3>
+        <div *ngFor="let Launchers of Launchers">
+            <table class="table table-sm table-bordered">
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody class="border-top">
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{Launchers.item_name}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" colspan="2" style="height: 22px;">
+                            <div>重火器</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 154px;">
+                        <td colspan="4" style="height: 154px;">
+                            <img class="img-fluid mx-auto d-block" src="{{Launchers.items_avatar}}">
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>モード</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Launchers.fire_mode}}</div>
+                        </td>
+                        <td class="bg-secondary text-light">
+                            <div>信頼性</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Launchers.reliability}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>~5m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>6~25m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>26~50m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>51~200m</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td style="height: 22px;">
+                            <div>至近</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>近</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>中</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>遠</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td style="height: 22px;">
+                            <div>{{Launchers.r_point_blank}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Launchers.r_short}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Launchers.r_middle}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Launchers.r_long}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>貫通力</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Launchers.penetration}}</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>非貫通</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Launchers.non_penetration_damage}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>貫通</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Launchers.penetration_damage}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>射程</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Launchers.range}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>装弾数</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Launchers.mag_round}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>必筋</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Launchers.kinryoku}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>携行</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Launchers.size}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>消音</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Launchers.silence}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>価格</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{Launchers.item_value}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>弾倉価格</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{Launchers.mag_value}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>口径</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{Launchers.cartridge}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>全長</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{Launchers.item_width}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>重量</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{Launchers.item_weight}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 44px;">
+                        <td colspan="4" style="height: 44px;">
+                            <div *ngFor="let efficiency of Launchers.efficiency">
+                                <div>■{{efficiency}}</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="height: 44px;">
+                        <td colspan="4" style="height: 44px;">
+                            <div class="brake">
+                                {{Launchers.note}}
                             </div>
                         </td>
                     </tr>
