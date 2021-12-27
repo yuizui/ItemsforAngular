@@ -341,7 +341,7 @@ export const ITEMS: ItemData[] = [
         /*消音LV*/silence: '3',
         /*本体価格*/item_value: '$900[9]',
         /*マガジン価格*/mag_value: '$6[6]',
-        /*弾薬*/cartridge: '',
+        /*弾薬*/cartridge: '9mm×19',
         /*全長*/item_width: '665mm',
         /*重量*/item_weight: '3,300g',
         /*機能*/efficiency: ['スコープLv1(1×1)標準装備'],
