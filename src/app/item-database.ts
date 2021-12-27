@@ -41,6 +41,9 @@ export const ITEMS: ItemData[] = [
         note: '乙女座'
     },
     // ここから記入
+
+    // #region アサルトライフル
+    //AAC MPW 300 BLACKOUT
     {
         /*アイテム名*/item_name: 'AAC MPW 300 BLACKOUT',
         /*画像*/items_avatar: 'assets/img/Rifle/AAC_MPW_300_BLACKOUT.jpg',
@@ -70,6 +73,7 @@ export const ITEMS: ItemData[] = [
         '※次R同一目標攻撃時+15%'],
         /*説明*/note:  'AAC社の多目的ライフル。MP5SDを代替する目的で開発され、.300 AAC Blackout(300 BLK)用の12.5インチバレルとAAC 762-SDN-6サイレンサーが標準装備されている。新弾薬の300 BLKは高威力・高貫通力・静音性を兼ね備えるものの、非対応の銃に装填・射撃できてしまい、暴発事故を起こしている。'
     },
+    //AK-12 (2020 model)
     {
         item_name: 'AK-12 (2020 model)',
         items_avatar: 'assets/img/Rifle/ak12.png',
@@ -100,6 +104,7 @@ export const ITEMS: ItemData[] = [
         ],
         note: 'AKシリーズの新型。フリーフローティングバレルに変更され、遠距離の精度が向上した。一部のパーツがM4/M16と互換性がある。最新のものはフォールディングストックが採用され、運用しやすくなった。'
     },
+    //FN SCAR-H
     {
         /*アイテム名*/item_name: 'FN SCAR-H',
         /*画像*/items_avatar: 'assets/img/Rifle/FN_SCARH.jpg',
@@ -126,6 +131,7 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: ['フル-10%','狙撃-10%','※次R同一目標攻撃時+20%','★片手-20%'],
         /*説明*/note:  '強力な7.62mmを使用する特殊部隊用突撃銃。ストックが折り畳めるため嵩張らない。'
     },
+    //H&K HK416A5
     {
         /*アイテム名*/item_name: 'H&K HK416A5',
         /*画像*/items_avatar: 'assets/img/Rifle/HK_HK416A5.jpg',
@@ -152,6 +158,7 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: ['狙撃-20%','※次R同一目標攻撃時+15%'],
         /*説明*/note:  'コンペ参加のために開発された全面改修型。操作性が向上した他、マガジンがM4規格に変更され共用可能になった。'
     },
+    //H&K HK416C
     {
         /*アイテム名*/item_name: 'H&K HK416C',
         /*画像*/items_avatar: 'assets/img/Rifle/HK_HK416C.jpg',
@@ -178,6 +185,7 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: ['狙撃-40%','※次R同一目標攻撃時+15%','★片手-20%'],
         /*説明*/note:  'HK416を8.9インチ銃身とワイヤーストックに換装したいわゆるCQBモデル。狭所での取り回しは良いが、信頼性に問題がある。'
     },
+    //H&K HK417
     {
         /*アイテム名*/item_name: 'H&K HK417',
         /*画像*/items_avatar: 'assets/img/Rifle/HK_HK417.png',
@@ -204,6 +212,7 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: ['フル-10%','狙撃-15%','※次R同一目標攻撃時+15%'],
         /*説明*/note:  'HK416の7.62mm×51弾モデル。7.62mm×51弾クラスのバトルライフルの有用性が再評価されたことから開発された。G3と比べ、遠距離射撃時における精度が不足している。'
     },
+    //H&K M110A1
     {
         /*アイテム名*/item_name: 'H&K M110A1',
         /*画像*/items_avatar: 'assets/img/Rifle/HK_M110A1.jpg',
@@ -230,6 +239,7 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: ['狙撃-0%','※次R同一目標攻撃時+15%'],
         /*説明*/note:  'アメリカ陸軍で使用されていたM110(SR25)には構造的な問題があり、また市街戦では全長と重量が過大であると言われていた。そこで白羽の矢が立ったのはHK社のHK417であり、軽量小型化改修が加えられたものがM110A1として採用された。'
     },
+    //H&K SL9SD
     {
         /*アイテム名*/item_name: 'H&K SL9SD',
         /*画像*/items_avatar: 'assets/img/Rifle/HK_SL9SD.png',
@@ -255,8 +265,9 @@ export const ITEMS: ItemData[] = [
         /*重量*/item_weight: '3,950g',
         /*機能*/efficiency: ['狙撃+0%','サプレッサー装着不可。音の方向感知-20%、必要達成値+5',
         'HP・AP・亜音速弾使用不可','※次R同一目標攻撃時+20%'],
-        /*説明*/note: 'H&K社が民間モデルSL8をベースに開発した消音狙撃銃。サプレッサーを標準装備しており、専用の7.62x37mm亜音速弾を使用することで消音効果を高めている。SL8をベースにしたとの通り（H&K G36の民生用モデル）の派生型の1つであり、SR9とは無関係である。'
+        /*説明*/note: 'H&K社が民間モデルSL8をベースに開発した消音狙撃銃。サプレッサーを標準装備しており、専用の7.62x37mm亜音速弾を使用することで消音効果を高めている。SL8をベースにしたとの通りH&K G36の民生用モデルの派生型の1つであり、SR9とは無関係である。'
     },
+    //SA M14 EBR
     {
         /*アイテム名*/item_name: 'SA M14 EBR',
         /*画像*/items_avatar: 'assets/img/Rifle/SA_M14_EBR.jpg',
@@ -283,6 +294,7 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: ['狙撃-10%','フル-10%','※次R同一目標攻撃時+20%'],
         /*説明*/note: 'M16やM4を超える射程距離と高威力を持つM14の再評価が始まり、軍倉庫に死蔵されていた物に全面的な改修を施した様々なモデルが実戦に多数投入されるようになった。これはセージ(Sage)社のEBR(Enhanced Battle Rifle)で、FRPや軽合金製のフォアエンド・ストックへの変更、ピカティニーレールによるモジュラーシステムの採用など、かなり大規模なカスタムが施されている。'
     },
+    //SA SRSS Bulldog
     {
         /*アイテム名*/item_name: 'SA SRSS Bulldog',
         /*画像*/items_avatar: 'assets/img/Rifle/SA_SRSS_Bulldog.jpg',
@@ -309,6 +321,7 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: ['狙撃-20%','フル-10%','※次R同一目標攻撃時+15%','★片手-20%'],
         /*説明*/note: '7.62mmを使用するM14を短小にしたライフル。動きや操作性に支障がなく、光学機器などのアタッチメントを装着できるライフルが欲しいという要望から、引退した米国海兵隊の軍曹によって開発された。'
     },
+    //Winchester Model 1895 Modernised
     {
         /*アイテム名*/item_name: 'Winchester Model 1895 Modernised',
         /*画像*/items_avatar: 'assets/img/Rifle/Winchester_1895_modernised.jpg',
@@ -335,6 +348,10 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: ['狙撃-30%','※次R同一目標攻撃時+15%'],
         /*説明*/note: 'ウィンチェスター社が初めて箱型弾倉を採用したレバーアクション小銃。かのルーズベルトもライオンへの最良の銃として賞賛した。現在は若干のアレンジが加えられながら日本のミロクで製造されている。最新モデルはレイルシステムに対応している。'
     },
+    // #endregion
+
+    // #region ショットガン
+    //Armscor VR80-A
     {
         /*アイテム名*/item_name: 'Armscor VR80-A',
         /*画像*/items_avatar: 'assets/img/Shotgun/Armscor_VR80_A.jpg',
@@ -361,6 +378,7 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: ['部位狙い不可','距離別貫通/ダメージ ','[至近]：+2/3D6+2/4D6+4 [中]：+0/1D6+2/2D6+4','装弾数19のマガジン使用時隠匿判定-20%'],
         /*説明*/note: '米Armscor社が近年発売した箱型弾倉式セミオート散弾銃。ストックやグリップがAR15と互換性があり見た目も操作性も似ており、かつ安価なためシェアを急速に拡大させている。'
     },
+    //Fostech Origin-12
     {
         /*アイテム名*/item_name: 'Fostech Origin-12',
         /*画像*/items_avatar: 'assets/img/Shotgun/Fostech_Origin_12.jpg',
@@ -387,6 +405,7 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: ['部位狙い不可','距離別貫通/ダメージ ','[至近]：+2/3D6+2/4D6+4 [中]：+0/1D6+2/2D6+4','装弾数20のマガジン使用時隠匿判定-20%','★片手-20%','スラグ弾命中修正[-45/-45/-40/-40]'],
         /*説明*/note: 'Saiga12を参考にして米国で造られた箱型弾倉式セミオート散弾銃。AR15と互換性があり、反動が少なく扱いやすいため非常に人気。"地球最速"が売り文句。'
     },
+    //MetalStorm MAUL
     {
         /*アイテム名*/item_name: 'MetalStorm MAUL',
         /*画像*/items_avatar: 'assets/img/Shotgun/MetalStorm_MAUL.jpg',
@@ -413,6 +432,7 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: ['部位狙い不可','距離別貫通/ダメージ','[至近]：+2/3D6+1/4D6+3 [中]：+0/1D6+1/2D6+2','補器(下)','射撃ファンブル表+2','特殊弾薬不可'],
         /*説明*/note: 'オーストラリアの企業メタルストーム社が開発した、アンダーバレルに装着できる、銃身がチューブマガジンになっている電気発火式セミオートマチック散弾銃。 リロードは銃身ごと交換する。 従来の機械的な連発機構を廃した恩恵で軽量であり、電気制御のため安全性が高い。 契約終了で余った在庫が民間軍事会社に回されている。'
     },
+    //MPS AA-12
     {
         /*アイテム名*/item_name: 'MPS AA-12',
         /*画像*/items_avatar: 'assets/img/Shotgun/MPS_AA_12.jpg',
@@ -439,6 +459,7 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: ['部位狙い不可','距離別貫通/ダメージ ','[至近]：+2/3D6+3/4D6+4 [中]：+0/1D6+2/2D6+4'],
         /*説明*/note: 'フルオート機能を持つ散弾銃。新技術により片手でも射撃可能な低反動を実現している。強盗から身を守るために作られたと噂される。'
     },
+    //TsNIITochMash KS-23M
     {
         /*アイテム名*/item_name: 'TsNIITochMash KS-23M',
         /*画像*/items_avatar: 'assets/img/Shotgun/TsNIITochMash_KS-23M.jpg',
@@ -465,6 +486,153 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: ['部位狙い不可','距離別貫通/ダメージ ','[至近]：+2/3D6+3/4D6+4 [中]：+0/1D6+2/2D6+4'],
         /*説明*/note: '旧ソ連において1971年に開発されたポンプアクション式散弾銃。正式名称は「特殊作戦用23mmカービン」。ライフルドバレルを採用しているためカービン扱いとなっている。大口径であることから閃光弾などの特殊なランチャーとしても利用されることがあった。近年扱いに困ったロシアは特殊機材に区分した。'
     },
+    // #endregion
+
+    // #region SMG
+    //AeroPrecision AR-57
+    {
+        /*アイテム名*/item_name: 'AeroPrecision AR-57',
+        /*画像*/items_avatar: 'assets/img/SMG/AeroPrecision_AR_57.jpg',
+        /*種別*/classify: 'SMG',
+        /*射撃モード*/fire_mode: 'S',
+        /*信頼性*/reliability: '00[99]',
+        /*至近*/r_point_blank: '-20',
+        /*近距離*/r_short: '0',
+        /*中距離*/r_middle: '0',
+        /*遠距離*/r_long: '-40',
+        /*貫通力*/penetration: '+4',
+        /*非貫通D*/non_penetration_damage: '1D6+2',
+        /*貫通D*/penetration_damage: '2D6+4',
+        /*射程*/range: '200m',
+        /*弾数*/mag_round: '50',
+        /*必要筋力*/kinryoku: '両5/片6',
+        /*CP*/size: '2×4',
+        /*消音LV*/silence: '3',
+        /*本体価格*/item_value: '$1900[10]',
+        /*マガジン価格*/mag_value: '$20[9]',
+        /*弾薬*/cartridge: '5.7×28mm',
+        /*全長*/item_width: '762mm',
+        /*重量*/item_weight: '3,400g',
+        /*機能*/efficiency: ['この弾倉(1×2)はマガジンポーチに入らない',
+                            '弾倉交換：[アイテム使用]2回',
+                            'スコープ系Lv2、3装着不可',
+                            'AR-15コンバージョンキット($3000[12])を購入することでフルオート発射が可能'],
+        /*説明*/note: '5.7×28mm弾仕様に改造したAR-15。M16/M4系で拡張性が高い。上部レールが短いため大きな照準器が装着できない。'
+    },
+    //Cz-Scorpion evo3 A1
+    {
+        /*アイテム名*/item_name: 'Cz-Scorpion evo3 A1',
+        /*画像*/items_avatar: 'assets/img/SMG/Cz_scorpion_evo_3_a1.png',
+        /*種別*/classify: 'SMG',
+        /*射撃モード*/fire_mode: 'S/3/F',
+        /*信頼性*/reliability: '□[99]',
+        /*至近*/r_point_blank: '-20',
+        /*近距離*/r_short: '0',
+        /*中距離*/r_middle: '0',
+        /*遠距離*/r_long: '-40',
+        /*貫通力*/penetration: '+2',
+        /*非貫通D*/non_penetration_damage: '1D6+2',
+        /*貫通D*/penetration_damage: '2D6+4',
+        /*射程*/range: '200m',
+        /*弾数*/mag_round: '30',
+        /*必要筋力*/kinryoku: '両4/片5',
+        /*CP*/size: '2×3',
+        /*消音LV*/silence: '3',
+        /*本体価格*/item_value: '$900[6]',
+        /*マガジン価格*/mag_value: '$6[6]',
+        /*弾薬*/cartridge: '9mm×19',
+        /*全長*/item_width: '410/660mm',
+        /*重量*/item_weight: '2,700g',
+        /*機能*/efficiency: [],
+        /*説明*/note: 'チェコ製のポリマーフレーム短機関銃。発展途上国の法執行機関で採用例が見られる。その性能・価格・ブランドから、アメリカ市場では非常に人気の高いPCCであり、マグプル社含む各社から多くの拡張アクセサリーが販売されている。全自動射撃機能がついたA1 短機関銃と 民間用の半自動射撃限定である S1の2モデルがある。'
+    },
+    //Diamondback Firearms DBX
+    {
+        /*アイテム名*/item_name: 'iamondback Firearms DBX',
+        /*画像*/items_avatar: 'assets/img/SMG/Diamondback_Firearms_DBX.jpg',
+        /*種別*/classify: 'SMG',
+        /*射撃モード*/fire_mode: 'S',
+        /*信頼性*/reliability: '00[99]',
+        /*至近*/r_point_blank: '-10',
+        /*近距離*/r_short: '0',
+        /*中距離*/r_middle: '-10',
+        /*遠距離*/r_long: '-50',
+        /*貫通力*/penetration: '+4',
+        /*非貫通D*/non_penetration_damage: '1D6+1',
+        /*貫通D*/penetration_damage: '2D6+3',
+        /*射程*/range: '200m',
+        /*弾数*/mag_round: '20',
+        /*必要筋力*/kinryoku: '両4/片5',
+        /*CP*/size: '2×2',
+        /*消音LV*/silence: '3',
+        /*本体価格*/item_value: '$1300[10]',
+        /*マガジン価格*/mag_value: '$20[9]',
+        /*弾薬*/cartridge: '5.7×28mm',
+        /*全長*/item_width: '380mm',
+        /*重量*/item_weight: '1,300g',
+        /*機能*/efficiency: ['※この弾倉(1×1)はFN Five-SeveNと共通。',
+                            'AR-15コンバージョンキット($3000[12])を購入することでフルオート発射が可能'],
+        /*説明*/note: 'AR-15から派生したDiamondBack社のPDW。最近の流行に乗り、FN57のマガジンを使用する。小型軽量でハンドリングが軽快。ストックを外したモデルがハンドガンとして扱われる事もある。'
+    },
+    //KRISS Vector
+    {
+        /*アイテム名*/item_name: 'KRISS Vector',
+        /*画像*/items_avatar: 'assets/img/SMG/KRISS_Vector.jpg',
+        /*種別*/classify: 'SMG',
+        /*射撃モード*/fire_mode: 'S/3/F',
+        /*信頼性*/reliability: '00[99]',
+        /*至近*/r_point_blank: '-22',
+        /*近距離*/r_short: '-4',
+        /*中距離*/r_middle: '-4',
+        /*遠距離*/r_long: '-46',
+        /*貫通力*/penetration: '+1',
+        /*非貫通D*/non_penetration_damage: '2D6',
+        /*貫通D*/penetration_damage: '3D6+1',
+        /*射程*/range: '200m',
+        /*弾数*/mag_round: '30',
+        /*必要筋力*/kinryoku: '両4/片5',
+        /*CP*/size: '2×3',
+        /*消音LV*/silence: '3',
+        /*本体価格*/item_value: '$2300[14]',
+        /*マガジン価格*/mag_value: '$6[9]',
+        /*弾薬*/cartridge: '.45ACP',
+        /*全長*/item_width: '406/617mm',
+        /*重量*/item_weight: '2.500g',
+        /*機能*/efficiency: ['Super V([フル]時+10%)'],
+        /*説明*/note: '近接戦闘に使えるコンパクトな兵器システムを求める法執行機関や軍隊向けの短機関銃。 低い銃身軸とスーパーV反動軽減システムにより、最も制御可能な選択射撃操作、または着弾を確認しつつ高速で次弾の発射が可能。'
+    },
+    //Maxim Defense MDX:510
+    {
+        /*アイテム名*/item_name: 'Maxim Defense MDX:510',
+        /*画像*/items_avatar: 'assets/img/SMG/Maxim_Defense_MDX_510.jpg',
+        /*種別*/classify: 'SMG',
+        /*射撃モード*/fire_mode: 'S/F',
+        /*信頼性*/reliability: '00[99]',
+        /*至近*/r_point_blank: '-22',
+        /*近距離*/r_short: '-14',
+        /*中距離*/r_middle: '-4',
+        /*遠距離*/r_long: '-36',
+        /*貫通力*/penetration: '+4',
+        /*非貫通D*/non_penetration_damage: '2D6+1',
+        /*貫通D*/penetration_damage: '3D6+2',
+        /*射程*/range: '200m',
+        /*弾数*/mag_round: '',
+        /*必要筋力*/kinryoku: '両5/片6',
+        /*CP*/size: '2×3',
+        /*消音LV*/silence: '2',
+        /*本体価格*/item_value: '$2500[10]',
+        /*マガジン価格*/mag_value: '$10[6]/$100[12](300BLK)',
+        /*弾薬*/cartridge: '5.56×45mm/7.62mm×35(.300 AAC Blackout)',
+        /*全長*/item_width: '600/640mm',
+        /*重量*/item_weight: '2,000g',
+        /*機能*/efficiency: ['.300 BLK使用時：貫通+4/2D6+3/3D6+4/消音4',
+                            'フル-10%'],
+        /*説明*/note: 'MAXIM DEFENSEが開発したPDWで扱い易いハンドガードが特徴。弾薬は拳銃弾ではなく小銃弾である5.56NATO弾か新型の300BLKの選択式である。'
+    },
+    // #endregion
+
+    // #region ハンドガン
+    //AF AF2011
     {
         item_name: 'AF AF2011',
         items_avatar: 'assets/img/Handgun/AF2011.png',
@@ -492,6 +660,7 @@ export const ITEMS: ItemData[] = [
                     '弾倉交換：[アイテム使用]2回'],
         note: '.45ACPの威力を倍増させるというコンセプトで作られた、改良ガバメント。ただ合わせたわけではなく、専用設計である。'
     },
+    //Beretta M90 Two
     {
         /*アイテム名*/item_name: 'Beretta M90 Two',
         /*画像*/items_avatar: 'assets/img/Handgun/Beretta_M90_Two.jpg',
@@ -518,6 +687,7 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: [],
         /*説明*/note:  '有名なベレッタ92をアップグレードしたバリエーション。デザインを人間工学的に再設計し、より手にフィットするようになっている。現在はM9A1の販売に移行し一般には生産されていないため、希少。日本の警察も採用している。'
     },
+    //Beretta M92X
     {
         /*アイテム名*/item_name: 'Beretta M92X',
         /*画像*/items_avatar: 'assets/img/Handgun/Beretta_M92X.png',
@@ -544,6 +714,7 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: [],
         /*説明*/note:  '90シリーズの進化系。ダイナミックな射撃競技やディフェンス目的に最適な最高のパフォーマンスを目指した妥協のないピストルとなっている。'
     },
+    //Beretta M93R
     {
         /*アイテム名*/item_name: 'Beretta M93R',
         /*画像*/items_avatar: 'assets/img/Handgun/Beretta_M93R.png',
@@ -572,6 +743,7 @@ export const ITEMS: ItemData[] = [
         ],
         /*説明*/note:  'イタリアでテロが頻発していた時期にベレッタが開発した、バースト可能な拳銃。民間用に販売はされておらず、公的機関からの需要があった時のみ生産・供給されている'
     },
+    //Beretta M96F Custom:"Smaurai Edge"
     {
         /*アイテム名*/item_name: 'Beretta M96F Custom:"Smaurai Edge"',
         /*画像*/items_avatar: 'assets/img/Handgun/Beretta_M96FC_samurai_edge.jpg',
@@ -601,8 +773,9 @@ export const ITEMS: ItemData[] = [
         ],
         /*説明*/note:  '9mmパラよりも強力な.40SWを使用するM92の派生型。強烈な反動をコントロールするためのマウントレイル付スタビライザーと４ポーテッド・コンペンセイターが標準装備されている。ロングマガジンを使用するため、継戦能力に優れる。'
     },
+    //Cz-75 Fullauto
     {
-        item_name: 'Cz-75 フルオート',
+        item_name: 'Cz-75 Fullauto',
         items_avatar: 'assets/img/Handgun/Cz_75_fullauto.jpg',
         classify: 'ハンドガン',
         fire_mode: 'S/F',
@@ -628,8 +801,9 @@ export const ITEMS: ItemData[] = [
                     'グリップマガジン使用時、両手+10%、隠匿-20%'],
         note: 'CZ75の発展型で、フルオート射撃できるようになっている。一般販売されず、法執行機関に供給される。'
     },
+    //Cz-Shadow 2
     {
-        item_name: 'Cz Shadow 2',
+        item_name: 'Cz-Shadow 2',
         items_avatar: 'assets/img/Handgun/Cz_shadow2.jpg',
         classify: 'ハンドガン',
         fire_mode: 'S',
@@ -654,6 +828,7 @@ export const ITEMS: ItemData[] = [
         efficiency: [        ],
         note: '世界一美しいCz75という優れたデザインガンをベースに、ガンスミスによる的確な改造とスポーツシューティング用の高品質なパーツの採用により、さらなる進化を遂げたモデル。射撃の成果を飛躍的に向上させる完璧な銃。'
     },
+    //FK BRNO
     {
         /*アイテム名*/item_name: 'FK BRNO',
         /*画像*/items_avatar: 'assets/img/Handgun/FK_BRNO.jpg',
@@ -681,6 +856,7 @@ export const ITEMS: ItemData[] = [
         ],
         /*説明*/note:  '伝説の拳銃。CZ-75をイタリアのとある銃器メーカーが改良した、世界最高峰の武器。バレル下に搭載された独自のリコイル減衰システムで反動がほとんどない。専用弾7.5FKの威力は9mm弾を凌駕し、44マグナムに匹敵する。アイアンサイトであっても150m先の静止目標を容易に狙える性能をもつ。ひとつひとつ職人が丁寧に仕上げる伝統工芸品だが、その精密さ故悪環境には弱い。        '
     },
+    //H&K P30
     {
         /*アイテム名*/item_name: 'H&K P30',
         /*画像*/items_avatar: 'assets/img/Handgun/HK_P30.jpg',
@@ -707,6 +883,7 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: [],
         /*説明*/note:  '2006年に発売された警察向け拳銃。女性警察官からの要望によりグリップのバックストラップを交換出来るP2000を開発したが、今度は男性警察官からグリップが細いとの苦情が出るようになり、あわせてグリップパネルも交換出来るようにしたP3000を開発し、商品化した。'
     },
+    //H&K USP45 Tactical
     {
         /*アイテム名*/item_name: 'H&K USP45 Tactical',
         /*画像*/items_avatar: 'assets/img/Handgun/HK_usp45_tactical.png',
@@ -733,6 +910,7 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: [],
         /*説明*/note:  'USPの.45ACP仕様。'
     },
+    //Mosin-Nagant Obrez
     {
         /*アイテム名*/item_name: 'Mosin-Nagant Obrez',
         /*画像*/items_avatar: 'assets/img/Handgun/Mosin_Nagant_Obrez.png',
@@ -761,6 +939,7 @@ export const ITEMS: ItemData[] = [
         ],
         /*説明*/note:  '極限まで切り詰められたMosin-Nagantライフル。精度は格段に落ちているが、初速が速く命中率は悪くない。ロシア革命当時ハンドガンが不足し、代わりとして広く使用された。革命が終わってもパルチザン、ゲリラ、そして1980年代でも犯罪行為に使われた。専用マウントがあるため、レールシステムに対応している。'
     },
+    //SIG P365XL
     {
         /*アイテム名*/item_name: 'SIG P365XL',
         /*画像*/items_avatar: 'assets/img/Handgun/SIG_P365XL.jpeg',
@@ -787,6 +966,9 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: [],
         /*説明*/note:  '護身用や法執行機関のコンシールド（秘匿携行）向けの小型自動拳銃のフルサイズモデル(それでも小さい)。弾薬は強装弾の+P弾を使用する。これはTTIによるカスタム品で命中力が向上している。'
     },
+    // #endregion
+
+    //テンプレ
     {
         /*アイテム名*/item_name: '',
         /*画像*/items_avatar: '',
