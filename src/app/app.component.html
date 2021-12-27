@@ -20,6 +20,8 @@
                     <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
                             onclick="location.href='#lblHeavyWp'">重火器</button></li>
                     <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
+                                onclick="location.href='#lblLmg'">LMG</button></li>
+                    <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
                             onclick="location.href='#lblOther'" href="#lblOther">他</button></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -1058,6 +1060,213 @@
                         <td colspan="4" style="height: 44px;">
                             <div class="brake">
                                 {{heavyweapons.note}}
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pb-5" id="lblLmg">
+            <hr>
+        </div>
+        <h3>LMG</h3>
+        <div *ngFor="let Lmgs of Lmgs">
+            <table class="table table-sm table-bordered">
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody class="border-top">
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{Lmgs.item_name}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" colspan="2" style="height: 22px;">
+                            <div>重火器</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 154px;">
+                        <td colspan="4" style="height: 154px;">
+                            <img class="img-fluid mx-auto d-block" src="{{Lmgs.items_avatar}}">
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>モード</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Lmgs.fire_mode}}</div>
+                        </td>
+                        <td class="bg-secondary text-light">
+                            <div>信頼性</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Lmgs.reliability}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>~5m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>6~25m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>26~50m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>51~200m</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td style="height: 22px;">
+                            <div>至近</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>近</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>中</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>遠</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td style="height: 22px;">
+                            <div>{{Lmgs.r_point_blank}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Lmgs.r_short}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Lmgs.r_middle}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Lmgs.r_long}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>貫通力</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Lmgs.penetration}}</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>非貫通</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Lmgs.non_penetration_damage}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>貫通</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Lmgs.penetration_damage}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>射程</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Lmgs.range}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>装弾数</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Lmgs.mag_round}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>必筋</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Lmgs.kinryoku}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>携行</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Lmgs.size}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>消音</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{Lmgs.silence}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>価格</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{Lmgs.item_value}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>弾倉価格</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{Lmgs.mag_value}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>口径</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{Lmgs.cartridge}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>全長</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{Lmgs.item_width}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>重量</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{Lmgs.item_weight}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 44px;">
+                        <td colspan="4" style="height: 44px;">
+                            <div *ngFor="let efficiency of Lmgs.efficiency">
+                                <div>■{{efficiency}}</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="height: 44px;">
+                        <td colspan="4" style="height: 44px;">
+                            <div class="brake">
+                                {{Lmgs.note}}
                             </div>
                         </td>
                     </tr>

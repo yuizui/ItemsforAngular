@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
   smgs: ItemData[] = [];
   sidearms: ItemData[] = [];
   heavyweapons: ItemData[] = [];
+  Lmgs: ItemData[] = [];
   others: ItemData[] = [];
 
   constructor() { }
@@ -41,6 +42,9 @@ export class AppComponent implements OnInit {
       }
       else if(items.classify == '重火器'){
         this.heavyweapons.push(items);
+      }
+      else if(items.classify == 'Lmg'){
+        this.Lmgs.push(items);
       }
       else{
         this.others.push(items);

@@ -548,7 +548,7 @@ export const ITEMS: ItemData[] = [
     },
     //Diamondback Firearms DBX
     {
-        /*アイテム名*/item_name: 'iamondback Firearms DBX',
+        /*アイテム名*/item_name: 'Diamondback Firearms DBX',
         /*画像*/items_avatar: 'assets/img/SMG/Diamondback_Firearms_DBX.jpg',
         /*種別*/classify: 'SMG',
         /*射撃モード*/fire_mode: 'S',
@@ -965,6 +965,37 @@ export const ITEMS: ItemData[] = [
         /*重量*/item_weight: '688g',
         /*機能*/efficiency: [],
         /*説明*/note:  '護身用や法執行機関のコンシールド（秘匿携行）向けの小型自動拳銃のフルサイズモデル(それでも小さい)。弾薬は強装弾の+P弾を使用する。これはTTIによるカスタム品で命中力が向上している。'
+    },
+    // #endregion
+
+    // #region LMG
+    //FightLite MCR060
+    {
+        /*アイテム名*/item_name: 'FightLite MCR060',
+        /*画像*/items_avatar: 'assets/img/LMG/FightLite_MCR060.jpg',
+        /*種別*/classify: 'LMG',
+        /*射撃モード*/fire_mode: 'S/F',
+        /*信頼性*/reliability: '99[98]',
+        /*至近*/r_point_blank: '-45※',
+        /*近距離*/r_short: '-31※',
+        /*中距離*/r_middle: '-12',
+        /*遠距離*/r_long: '-32',
+        /*貫通力*/penetration: '+5',
+        /*非貫通D*/non_penetration_damage: '2D6+3',
+        /*貫通D*/penetration_damage: '3D6+4',
+        /*射程*/range: '400m',
+        /*弾数*/mag_round: '200(B)',
+        /*必要筋力*/kinryoku: '両8/片-',
+        /*CP*/size: '3×5',
+        /*消音LV*/silence: '1',
+        /*本体価格*/item_value: '$7200[10]',
+        /*マガジン価格*/mag_value: '$40[9]',
+        /*弾薬*/cartridge: '5.56mm×45',
+        /*全長*/item_width: '1,076mm',
+        /*重量*/item_weight: '5,500g',
+        /*機能*/efficiency: ['※次R同一目標攻撃時+20%',
+                            '制圧射撃時信頼性-1'],
+        /*説明*/note: 'M16を改造しベルト弾薬をセットできるようにした銃。元突撃銃なので取り回しは良いが、長時間の連続射撃を行うと放熱面で不具合が起きやすい。'
     },
     // #endregion
 
