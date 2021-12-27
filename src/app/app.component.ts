@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   title = 'gundogdayo';
 
   itemData = ITEMS;
-  rifles: ItemData[] = [];
+  Arifles: ItemData[] = [];
   sRifles: ItemData[] = [];
   amRifles: ItemData[] = [];
   shotguns: ItemData[] = [];
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
     for( var i = 0; i < this.itemData.length; i++ ){
       var items = this.itemData[i];
       if(items.classify == 'ライフル'){
-        this.rifles.push(items);
+        this.Arifles.push(items);
       }
       if(items.classify == 'SR'){
         this.sRifles.push(items);
