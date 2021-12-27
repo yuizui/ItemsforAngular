@@ -1150,6 +1150,41 @@ export const ITEMS: ItemData[] = [
     },
     // #endregion
 
+    // #region 武器戦闘
+    {
+        /*アイテム名*/item_name: '両手剣',
+        /*画像*/items_avatar: 'assets/img/melee/Arlenes_two_handed_sword.jpg',
+        /*種別*/classify: '武器戦闘',
+        /*射撃モード*/fire_mode: '-',
+        /*信頼性*/reliability: '00[00]',
+        /*至近*/r_point_blank: '-30※',
+        /*近距離*/r_short: '0※',
+        /*中距離*/r_middle: '-20',
+        /*遠距離*/r_long: '-40',
+        /*貫通力*/penetration: '+4',
+        /*非貫通D*/non_penetration_damage: '3D6+4',
+        /*貫通D*/penetration_damage: '5D6+6',
+        /*射程*/range: '5m',
+        /*弾数*/mag_round: '-',
+        /*必要筋力*/kinryoku: '両8/片-',
+        /*CP*/size: '2×6',
+        /*消音LV*/silence: '5',
+        /*本体価格*/item_value: '$10000[10]',
+        /*マガジン価格*/mag_value: '-',
+        /*弾薬*/cartridge: '-',
+        /*全長*/item_width: '1,650mm',
+        /*重量*/item_weight: '6,000g',
+        /*機能*/efficiency: ['全力移動-10m',
+                            '運動系-10%',
+                            '取扱難度：[武器戦闘]3Lv',
+                            '抜き打ちルール適用不可(居合は可能)',
+                            '※半径2m範囲攻撃',
+                            '盾として利用することが可能',
+                            '盾による遮蔽：10×[武器戦闘]Lv%、装甲値：12、防御値：3'],
+        /*説明*/note: '両手剣。銃が普及した現代においては無用の長物だが、その破壊力は現代の装甲には驚異となる。画像とデータは一例としてアリーン・マーズが使用している両手剣であり、このデータは日本の大太刀なども含むため全長・重量はデータの限りではない。'
+    },
+    // #endregion 
+
     // #region 
     // #endregion 
     //テンプレ

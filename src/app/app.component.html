@@ -30,6 +30,8 @@
                         <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
                             onclick="location.href='#lblLauncherWp'">ランチャー</button></li>
                     <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
+                        onclick="location.href='#lblmelees'">近接武器</button></li>
+                    <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
                         onclick="location.href='#lblOther'" href="#lblOther">他</button></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -1898,6 +1900,213 @@
                         <td colspan="4" style="height: 44px;">
                             <div class="brake">
                                 {{Launchers.note}}
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pb-5" id="lblmelees">
+            <hr>
+        </div>
+        <h3>近接武器</h3>
+        <div *ngFor="let melees of melees">
+            <table class="table table-sm table-bordered">
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody class="border-top">
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{melees.item_name}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" colspan="2" style="height: 22px;">
+                            <div>武器戦闘</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 154px;">
+                        <td colspan="4" style="height: 154px;">
+                            <img class="img-fluid mx-auto d-block" src="{{melees.items_avatar}}">
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>モード</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{melees.fire_mode}}</div>
+                        </td>
+                        <td class="bg-secondary text-light">
+                            <div>信頼性</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{melees.reliability}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>~0m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>1~2m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>3~4m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>5m</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td style="height: 22px;">
+                            <div>至近</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>近</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>中</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>遠</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td style="height: 22px;">
+                            <div>{{melees.r_point_blank}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{melees.r_short}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{melees.r_middle}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{melees.r_long}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>貫通力</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{melees.penetration}}</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>非貫通</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{melees.non_penetration_damage}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>貫通</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{melees.penetration_damage}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>射程</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{melees.range}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>装弾数</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{melees.mag_round}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>必筋</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{melees.kinryoku}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>携行</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{melees.size}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>消音</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{melees.silence}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>価格</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{melees.item_value}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>弾倉価格</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{melees.mag_value}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>口径</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{melees.cartridge}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>全長</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{melees.item_width}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>重量</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{melees.item_weight}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 44px;">
+                        <td colspan="4" style="height: 44px;">
+                            <div *ngFor="let efficiency of melees.efficiency">
+                                <div>■{{efficiency}}</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="height: 44px;">
+                        <td colspan="4" style="height: 44px;">
+                            <div class="brake">
+                                {{melees.note}}
                             </div>
                         </td>
                     </tr>
