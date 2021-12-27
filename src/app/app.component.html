@@ -10,19 +10,19 @@
             <div class="collapse navbar-collapse" id="Navber">
                 <ul class="navbar-nav me-auto">
                     <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
-                            onclick="location.href='#lblRifle'">ライフル</button></li>
+                        onclick="location.href='#lblPistol'">ハンドガン</button></li>
                     <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
-                            onclick="location.href='#lblSg'">ショットガン</button></li>
+                        onclick="location.href='#lblSmg'">サブマシンガン</button></li>
                     <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
-                            onclick="location.href='#lblSmg'">サブマシンガン</button></li>
+                        onclick="location.href='#lblSg'">ショットガン</button></li>
                     <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
-                            onclick="location.href='#lblPistol'">ハンドガン</button></li>
+                        onclick="location.href='#lblRifle'">ライフル</button></li>
                     <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
-                            onclick="location.href='#lblHeavyWp'">重火器</button></li>
+                        onclick="location.href='#lblHeavyWp'">重火器</button></li>
                     <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
-                                onclick="location.href='#lblLmg'">LMG</button></li>
+                        onclick="location.href='#lblLmg'">LMG</button></li>
                     <li class="pb-1 nav-item"><button class="btn btn-rounded btn-sm" type=“button”
-                            onclick="location.href='#lblOther'" href="#lblOther">他</button></li>
+                        onclick="location.href='#lblOther'" href="#lblOther">他</button></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -32,11 +32,11 @@
 <div class="row">
     <div class="col-10 offset-1 col-sm-8 col-md-7">
         
-        <div class="pb-5" id="lblRifle">
+        <div class="pb-5" id="lblPistol">
             <hr>
         </div>
-        <h3>ライフル</h3>
-        <div *ngFor="let rifles of rifles">
+        <h3>ピストル</h3>
+        <div *ngFor="let sidearms of sidearms">
             <table class="table table-sm table-bordered">
                 <colgroup>
                     <col>
@@ -47,15 +47,15 @@
                 <tbody class="border-top">
                     <tr style="height: 22px;">
                         <td colspan="2" style="height: 22px;">
-                            <div>{{rifles.item_name}}</div>
+                            <div>{{sidearms.item_name}}</div>
                         </td>
                         <td class="bg-secondary text-light" colspan="2" style="height: 22px;">
-                            <div>ライフル</div>
+                            <div>ハンドガン</div>
                         </td>
                     </tr>
                     <tr style="height: 154px;">
                         <td colspan="4" style="height: 154px;">
-                            <img class="img-fluid mx-auto d-block" src="{{rifles.items_avatar}}">
+                            <img class="img-fluid mx-auto d-block" src="{{sidearms.items_avatar}}">
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -63,13 +63,13 @@
                             <div>モード</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{rifles.fire_mode}}</div>
+                            <div>{{sidearms.fire_mode}}</div>
                         </td>
                         <td class="bg-secondary text-light">
                             <div>信頼性</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{rifles.reliability}}</div>
+                            <div>{{sidearms.reliability}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -102,16 +102,16 @@
                     </tr>
                     <tr style="height: 22px;">
                         <td style="height: 22px;">
-                            <div>{{rifles.r_point_blank}}</div>
+                            <div>{{sidearms.r_point_blank}}</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{rifles.r_short}}</div>
+                            <div>{{sidearms.r_short}}</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{rifles.r_middle}}</div>
+                            <div>{{sidearms.r_middle}}</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{rifles.r_long}}</div>
+                            <div>{{sidearms.r_long}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -119,7 +119,7 @@
                             <div>貫通力</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{rifles.penetration}}</div>
+                            <div>{{sidearms.penetration}}</div>
                         </td>
                         <td colspan="2" style="height: 22px;">
                             <div><br></div>
@@ -130,13 +130,13 @@
                             <div>非貫通</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{rifles.non_penetration_damage}}</div>
+                            <div>{{sidearms.non_penetration_damage}}</div>
                         </td>
                         <td class="bg-secondary text-light" style="height: 22px;">
                             <div>貫通</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{rifles.penetration_damage}}</div>
+                            <div>{{sidearms.penetration_damage}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -144,13 +144,13 @@
                             <div>射程</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{rifles.range}}</div>
+                            <div>{{sidearms.range}}</div>
                         </td>
                         <td class="bg-secondary text-light" style="height: 22px;">
                             <div>装弾数</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{rifles.mag_round}}</div>
+                            <div>{{sidearms.mag_round}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -158,13 +158,13 @@
                             <div>必筋</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{rifles.kinryoku}}</div>
+                            <div>{{sidearms.kinryoku}}</div>
                         </td>
                         <td class="bg-secondary text-light" style="height: 22px;">
                             <div>携行</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{rifles.size}}</div>
+                            <div>{{sidearms.size}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -172,7 +172,7 @@
                             <div>消音</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{rifles.silence}}</div>
+                            <div>{{sidearms.silence}}</div>
                         </td>
                         <td style="height: 22px;">
                             <div><br></div>
@@ -186,7 +186,7 @@
                             <div>価格</div>
                         </td>
                         <td colspan="2" style="height: 22px;">
-                            <div>{{rifles.item_value}}</div>
+                            <div>{{sidearms.item_value}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -194,7 +194,7 @@
                             <div>弾倉価格</div>
                         </td>
                         <td colspan="2" style="height: 22px;">
-                            <div>{{rifles.mag_value}}</div>
+                            <div>{{sidearms.mag_value}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -202,7 +202,7 @@
                             <div>口径</div>
                         </td>
                         <td colspan="2" style="height: 22px;">
-                            <div>{{rifles.cartridge}}</div>
+                            <div>{{sidearms.cartridge}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -210,7 +210,7 @@
                             <div>全長</div>
                         </td>
                         <td colspan="2" style="height: 22px;">
-                            <div>{{rifles.item_width}}</div>
+                            <div>{{sidearms.item_width}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -218,12 +218,12 @@
                             <div>重量</div>
                         </td>
                         <td colspan="2" style="height: 22px;">
-                            <div>{{rifles.item_weight}}</div>
+                            <div>{{sidearms.item_weight}}</div>
                         </td>
                     </tr>
                     <tr style="height: 44px;">
                         <td colspan="4" style="height: 44px;">
-                            <div *ngFor="let efficiency of rifles.efficiency">
+                            <div *ngFor="let efficiency of sidearms.efficiency">
                                 <div>■{{efficiency}}</div>
                             </div>
                         </td>
@@ -231,214 +231,7 @@
                     <tr style="height: 44px;">
                         <td colspan="4" style="height: 44px;">
                             <div class="brake">
-                                {{rifles.note}}
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="pb-5" id="lblSg">
-            <hr>
-        </div>
-        <h3>ショットガン</h3>
-        <div *ngFor="let shotguns of shotguns">
-            <table class="table table-sm table-bordered">
-                <colgroup>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                </colgroup>
-                <tbody class="border-top">
-                    <tr style="height: 22px;">
-                        <td colspan="2" style="height: 22px;">
-                            <div>{{shotguns.item_name}}</div>
-                        </td>
-                        <td class="bg-secondary text-light" colspan="2" style="height: 22px;">
-                            <div>ライフル</div>
-                        </td>
-                    </tr>
-                    <tr style="height: 154px;">
-                        <td colspan="4" style="height: 154px;">
-                            <img class="img-fluid mx-auto d-block" src="{{shotguns.items_avatar}}">
-                        </td>
-                    </tr>
-                    <tr style="height: 22px;">
-                        <td class="bg-secondary text-light" style="height: 22px;">
-                            <div>モード</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div>{{shotguns.fire_mode}}</div>
-                        </td>
-                        <td class="bg-secondary text-light">
-                            <div>信頼性</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div>{{shotguns.reliability}}</div>
-                        </td>
-                    </tr>
-                    <tr style="height: 22px;">
-                        <td class="bg-secondary text-light" style="height: 22px;">
-                            <div>~5m</div>
-                        </td>
-                        <td class="bg-secondary text-light" style="height: 22px;">
-                            <div>6~25m</div>
-                        </td>
-                        <td class="bg-secondary text-light" style="height: 22px;">
-                            <div>26~50m</div>
-                        </td>
-                        <td class="bg-secondary text-light" style="height: 22px;">
-                            <div>51~200m</div>
-                        </td>
-                    </tr>
-                    <tr style="height: 22px;">
-                        <td style="height: 22px;">
-                            <div>至近</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div>近</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div>中</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div>遠</div>
-                        </td>
-                    </tr>
-                    <tr style="height: 22px;">
-                        <td style="height: 22px;">
-                            <div>{{shotguns.r_point_blank}}</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div>{{shotguns.r_short}}</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div>{{shotguns.r_middle}}</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div>{{shotguns.r_long}}</div>
-                        </td>
-                    </tr>
-                    <tr style="height: 22px;">
-                        <td class="bg-secondary text-light" style="height: 22px;">
-                            <div>貫通力</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div>{{shotguns.penetration}}</div>
-                        </td>
-                        <td colspan="2" style="height: 22px;">
-                            <div><br></div>
-                        </td>
-                    </tr>
-                    <tr style="height: 22px;">
-                        <td class="bg-secondary text-light" style="height: 22px;">
-                            <div>非貫通</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div>{{shotguns.non_penetration_damage}}</div>
-                        </td>
-                        <td class="bg-secondary text-light" style="height: 22px;">
-                            <div>貫通</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div>{{shotguns.penetration_damage}}</div>
-                        </td>
-                    </tr>
-                    <tr style="height: 22px;">
-                        <td class="bg-secondary text-light" style="height: 22px;">
-                            <div>射程</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div>{{shotguns.range}}</div>
-                        </td>
-                        <td class="bg-secondary text-light" style="height: 22px;">
-                            <div>装弾数</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div>{{shotguns.mag_round}}</div>
-                        </td>
-                    </tr>
-                    <tr style="height: 22px;">
-                        <td class="bg-secondary text-light" style="height: 22px;">
-                            <div>必筋</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div>{{shotguns.kinryoku}}</div>
-                        </td>
-                        <td class="bg-secondary text-light" style="height: 22px;">
-                            <div>携行</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div>{{shotguns.size}}</div>
-                        </td>
-                    </tr>
-                    <tr style="height: 22px;">
-                        <td class="bg-secondary text-light" style="height: 22px;">
-                            <div>消音</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div>{{shotguns.silence}}</div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div><br></div>
-                        </td>
-                        <td style="height: 22px;">
-                            <div><br></div>
-                        </td>
-                    </tr>
-                    <tr style="height: 22px;">
-                        <td colspan="2" style="height: 22px;">
-                            <div>価格</div>
-                        </td>
-                        <td colspan="2" style="height: 22px;">
-                            <div>{{shotguns.item_value}}</div>
-                        </td>
-                    </tr>
-                    <tr style="height: 22px;">
-                        <td colspan="2" style="height: 22px;">
-                            <div>弾倉価格</div>
-                        </td>
-                        <td colspan="2" style="height: 22px;">
-                            <div>{{shotguns.mag_value}}</div>
-                        </td>
-                    </tr>
-                    <tr style="height: 22px;">
-                        <td colspan="2" style="height: 22px;">
-                            <div>口径</div>
-                        </td>
-                        <td colspan="2" style="height: 22px;">
-                            <div>{{shotguns.cartridge}}</div>
-                        </td>
-                    </tr>
-                    <tr style="height: 22px;">
-                        <td colspan="2" style="height: 22px;">
-                            <div>全長</div>
-                        </td>
-                        <td colspan="2" style="height: 22px;">
-                            <div>{{shotguns.item_width}}</div>
-                        </td>
-                    </tr>
-                    <tr style="height: 22px;">
-                        <td colspan="2" style="height: 22px;">
-                            <div>重量</div>
-                        </td>
-                        <td colspan="2" style="height: 22px;">
-                            <div>{{shotguns.item_weight}}</div>
-                        </td>
-                    </tr>
-                    <tr style="height: 44px;">
-                        <td colspan="4" style="height: 44px;">
-                            <div *ngFor="let efficiency of shotguns.efficiency">
-                                <div>■{{efficiency}}</div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="height: 44px;">
-                        <td colspan="4" style="height: 44px;">
-                            <div class="brake">
-                                {{shotguns.note}}
+                                {{sidearms.note}}
                             </div>
                         </td>
                     </tr>
@@ -653,11 +446,11 @@
             </table>
         </div>
 
-        <div class="pb-5" id="lblPistol">
+        <div class="pb-5" id="lblSg">
             <hr>
         </div>
-        <h3>ピストル</h3>
-        <div *ngFor="let sidearms of sidearms">
+        <h3>ショットガン</h3>
+        <div *ngFor="let shotguns of shotguns">
             <table class="table table-sm table-bordered">
                 <colgroup>
                     <col>
@@ -668,15 +461,15 @@
                 <tbody class="border-top">
                     <tr style="height: 22px;">
                         <td colspan="2" style="height: 22px;">
-                            <div>{{sidearms.item_name}}</div>
+                            <div>{{shotguns.item_name}}</div>
                         </td>
                         <td class="bg-secondary text-light" colspan="2" style="height: 22px;">
-                            <div>ハンドガン</div>
+                            <div>ライフル</div>
                         </td>
                     </tr>
                     <tr style="height: 154px;">
                         <td colspan="4" style="height: 154px;">
-                            <img class="img-fluid mx-auto d-block" src="{{sidearms.items_avatar}}">
+                            <img class="img-fluid mx-auto d-block" src="{{shotguns.items_avatar}}">
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -684,13 +477,13 @@
                             <div>モード</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{sidearms.fire_mode}}</div>
+                            <div>{{shotguns.fire_mode}}</div>
                         </td>
                         <td class="bg-secondary text-light">
                             <div>信頼性</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{sidearms.reliability}}</div>
+                            <div>{{shotguns.reliability}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -723,16 +516,16 @@
                     </tr>
                     <tr style="height: 22px;">
                         <td style="height: 22px;">
-                            <div>{{sidearms.r_point_blank}}</div>
+                            <div>{{shotguns.r_point_blank}}</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{sidearms.r_short}}</div>
+                            <div>{{shotguns.r_short}}</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{sidearms.r_middle}}</div>
+                            <div>{{shotguns.r_middle}}</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{sidearms.r_long}}</div>
+                            <div>{{shotguns.r_long}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -740,7 +533,7 @@
                             <div>貫通力</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{sidearms.penetration}}</div>
+                            <div>{{shotguns.penetration}}</div>
                         </td>
                         <td colspan="2" style="height: 22px;">
                             <div><br></div>
@@ -751,13 +544,13 @@
                             <div>非貫通</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{sidearms.non_penetration_damage}}</div>
+                            <div>{{shotguns.non_penetration_damage}}</div>
                         </td>
                         <td class="bg-secondary text-light" style="height: 22px;">
                             <div>貫通</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{sidearms.penetration_damage}}</div>
+                            <div>{{shotguns.penetration_damage}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -765,13 +558,13 @@
                             <div>射程</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{sidearms.range}}</div>
+                            <div>{{shotguns.range}}</div>
                         </td>
                         <td class="bg-secondary text-light" style="height: 22px;">
                             <div>装弾数</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{sidearms.mag_round}}</div>
+                            <div>{{shotguns.mag_round}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -779,13 +572,13 @@
                             <div>必筋</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{sidearms.kinryoku}}</div>
+                            <div>{{shotguns.kinryoku}}</div>
                         </td>
                         <td class="bg-secondary text-light" style="height: 22px;">
                             <div>携行</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{sidearms.size}}</div>
+                            <div>{{shotguns.size}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -793,7 +586,7 @@
                             <div>消音</div>
                         </td>
                         <td style="height: 22px;">
-                            <div>{{sidearms.silence}}</div>
+                            <div>{{shotguns.silence}}</div>
                         </td>
                         <td style="height: 22px;">
                             <div><br></div>
@@ -807,7 +600,7 @@
                             <div>価格</div>
                         </td>
                         <td colspan="2" style="height: 22px;">
-                            <div>{{sidearms.item_value}}</div>
+                            <div>{{shotguns.item_value}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -815,7 +608,7 @@
                             <div>弾倉価格</div>
                         </td>
                         <td colspan="2" style="height: 22px;">
-                            <div>{{sidearms.mag_value}}</div>
+                            <div>{{shotguns.mag_value}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -823,7 +616,7 @@
                             <div>口径</div>
                         </td>
                         <td colspan="2" style="height: 22px;">
-                            <div>{{sidearms.cartridge}}</div>
+                            <div>{{shotguns.cartridge}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -831,7 +624,7 @@
                             <div>全長</div>
                         </td>
                         <td colspan="2" style="height: 22px;">
-                            <div>{{sidearms.item_width}}</div>
+                            <div>{{shotguns.item_width}}</div>
                         </td>
                     </tr>
                     <tr style="height: 22px;">
@@ -839,12 +632,12 @@
                             <div>重量</div>
                         </td>
                         <td colspan="2" style="height: 22px;">
-                            <div>{{sidearms.item_weight}}</div>
+                            <div>{{shotguns.item_weight}}</div>
                         </td>
                     </tr>
                     <tr style="height: 44px;">
                         <td colspan="4" style="height: 44px;">
-                            <div *ngFor="let efficiency of sidearms.efficiency">
+                            <div *ngFor="let efficiency of shotguns.efficiency">
                                 <div>■{{efficiency}}</div>
                             </div>
                         </td>
@@ -852,13 +645,220 @@
                     <tr style="height: 44px;">
                         <td colspan="4" style="height: 44px;">
                             <div class="brake">
-                                {{sidearms.note}}
+                                {{shotguns.note}}
                             </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
+
+        <div class="pb-5" id="lblRifle">
+            <hr>
+        </div>
+        <h3>ライフル</h3>
+        <div *ngFor="let rifles of rifles">
+            <table class="table table-sm table-bordered">
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody class="border-top">
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{rifles.item_name}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" colspan="2" style="height: 22px;">
+                            <div>ライフル</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 154px;">
+                        <td colspan="4" style="height: 154px;">
+                            <img class="img-fluid mx-auto d-block" src="{{rifles.items_avatar}}">
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>モード</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{rifles.fire_mode}}</div>
+                        </td>
+                        <td class="bg-secondary text-light">
+                            <div>信頼性</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{rifles.reliability}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>~5m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>6~25m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>26~50m</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>51~200m</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td style="height: 22px;">
+                            <div>至近</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>近</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>中</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>遠</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td style="height: 22px;">
+                            <div>{{rifles.r_point_blank}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{rifles.r_short}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{rifles.r_middle}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{rifles.r_long}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>貫通力</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{rifles.penetration}}</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>非貫通</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{rifles.non_penetration_damage}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>貫通</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{rifles.penetration_damage}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>射程</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{rifles.range}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>装弾数</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{rifles.mag_round}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>必筋</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{rifles.kinryoku}}</div>
+                        </td>
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>携行</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{rifles.size}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td class="bg-secondary text-light" style="height: 22px;">
+                            <div>消音</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div>{{rifles.silence}}</div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                        <td style="height: 22px;">
+                            <div><br></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>価格</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{rifles.item_value}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>弾倉価格</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{rifles.mag_value}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>口径</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{rifles.cartridge}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>全長</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{rifles.item_width}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 22px;">
+                        <td colspan="2" style="height: 22px;">
+                            <div>重量</div>
+                        </td>
+                        <td colspan="2" style="height: 22px;">
+                            <div>{{rifles.item_weight}}</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 44px;">
+                        <td colspan="4" style="height: 44px;">
+                            <div *ngFor="let efficiency of rifles.efficiency">
+                                <div>■{{efficiency}}</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="height: 44px;">
+                        <td colspan="4" style="height: 44px;">
+                            <div class="brake">
+                                {{rifles.note}}
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>          
 
         <div class="pb-5" id="lblHeavyWp">
             <hr>
