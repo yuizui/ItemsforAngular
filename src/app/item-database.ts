@@ -574,34 +574,6 @@ export const ITEMS: ItemData[] = [
                             'AR-15コンバージョンキット($3000[12])を購入することでフルオート発射が可能'],
         /*説明*/note: 'AR-15から派生したDiamondBack社のPDW。最近の流行に乗り、FN57のマガジンを使用する。小型軽量でハンドリングが軽快。ストックを外したモデルがハンドガンとして扱われる事もある。'
     },
-    //Maxim Defense MDX:510
-    {
-        /*アイテム名*/item_name: 'Maxim Defense MDX:510',
-        /*画像*/items_avatar: 'assets/img/SMG/Maxim_Defense_MDX_510.jpg',
-        /*種別*/classify: 'SMG',
-        /*射撃モード*/fire_mode: 'S/F',
-        /*信頼性*/reliability: '00[99]',
-        /*至近*/r_point_blank: '-22',
-        /*近距離*/r_short: '-14',
-        /*中距離*/r_middle: '-4',
-        /*遠距離*/r_long: '-36',
-        /*貫通力*/penetration: '+4',
-        /*非貫通D*/non_penetration_damage: '2D6+1',
-        /*貫通D*/penetration_damage: '3D6+2',
-        /*射程*/range: '200m',
-        /*弾数*/mag_round: '',
-        /*必要筋力*/kinryoku: '両5/片6',
-        /*CP*/size: '2×3',
-        /*消音LV*/silence: '2',
-        /*本体価格*/item_value: '$2500[10]',
-        /*マガジン価格*/mag_value: '$10[6]/$100[12](300BLK)',
-        /*弾薬*/cartridge: '5.56×45mm/7.62mm×35(.300 AAC Blackout)',
-        /*全長*/item_width: '600/640mm',
-        /*重量*/item_weight: '2,000g',
-        /*機能*/efficiency: ['.300 BLK使用時：貫通+4/2D6+3/3D6+4/消音4',
-                            'フル-10%'],
-        /*説明*/note: 'MAXIM DEFENSEが開発したPDWで扱い易いハンドガードが特徴。弾薬は拳銃弾ではなく小銃弾である5.56NATO弾か新型の300BLKの選択式である。'
-    },
     //KRISS Vector
     {
         /*アイテム名*/item_name: 'KRISS Vector',
@@ -629,7 +601,34 @@ export const ITEMS: ItemData[] = [
         /*機能*/efficiency: ['Super V([フル]時+10%)'],
         /*説明*/note: '近接戦闘に使えるコンパクトな兵器システムを求める法執行機関や軍隊向けの短機関銃。 低い銃身軸とスーパーV反動軽減システムにより、最も制御可能な選択射撃操作、または着弾を確認しつつ高速で次弾の発射が可能。'
     },
-    
+    //Maxim Defense MDX:510
+    {
+        /*アイテム名*/item_name: 'Maxim Defense MDX:510',
+        /*画像*/items_avatar: 'assets/img/SMG/Maxim_Defense_MDX_510.jpg',
+        /*種別*/classify: 'SMG',
+        /*射撃モード*/fire_mode: 'S/F',
+        /*信頼性*/reliability: '00[99]',
+        /*至近*/r_point_blank: '-22',
+        /*近距離*/r_short: '-14',
+        /*中距離*/r_middle: '-4',
+        /*遠距離*/r_long: '-36',
+        /*貫通力*/penetration: '+4',
+        /*非貫通D*/non_penetration_damage: '2D6+1',
+        /*貫通D*/penetration_damage: '3D6+2',
+        /*射程*/range: '200m',
+        /*弾数*/mag_round: '',
+        /*必要筋力*/kinryoku: '両5/片6',
+        /*CP*/size: '2×3',
+        /*消音LV*/silence: '2',
+        /*本体価格*/item_value: '$2500[10]',
+        /*マガジン価格*/mag_value: '$10[6]/$100[12](300BLK)',
+        /*弾薬*/cartridge: '5.56×45mm/7.62mm×35(.300 AAC Blackout)',
+        /*全長*/item_width: '600/640mm',
+        /*重量*/item_weight: '2,000g',
+        /*機能*/efficiency: ['.300 AAC Blackout使用時：貫通+4/2D6+3/3D6+4/消音4',
+                            'フル-10%'],
+        /*説明*/note: 'MAXIM DEFENSEが開発したPDWで扱い易いハンドガードが特徴。弾薬は拳銃弾ではなく小銃弾である5.56NATO弾か新型の300BLKの選択式である。'
+    },
     // #endregion
 
     // #region ハンドガン
