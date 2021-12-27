@@ -407,12 +407,12 @@ export const ITEMS: ItemData[] = [
     },
     // #endregion Sライフル
 
-    // #region 対物ライフル
+    // #region 対物
     //Barret_XM500
     {
         /*アイテム名*/item_name: 'Barret XM500',
         /*画像*/items_avatar: 'assets/img/amRifle/Barret_XM500.png',
-        /*種別*/classify: '対物ライフル',
+        /*種別*/classify: '対物',
         /*射撃モード*/fire_mode: 'S',
         /*信頼性*/reliability: '00[99]',
         /*至近*/r_point_blank: '-60※',

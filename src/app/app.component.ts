@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
       if(items.classify == 'SR'){
         this.sRifles.push(items);
       }
-      if(items.classify == '対物ライフル'){
+      if(items.classify == '対物'){
         this.amRifles.push(items);
       }
       else if(items.classify == 'ショットガン'){
