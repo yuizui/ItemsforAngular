@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
       else if(items.classify == '重火器'){
         this.heavyweapons.push(items);
       }
-      else if(items.classify == 'Lmg'){
+      else if(items.classify == 'LMG'){
         this.Lmgs.push(items);
       }
       else{
