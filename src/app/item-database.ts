@@ -603,7 +603,7 @@ export const ITEMS: ItemData[] = [
     },
     //Maxim Defense MDX:510
     {
-        /*アイテム名*/item_name: 'Maxim Defense MDX:510',
+        /*アイテム名*/item_name: 'MD MDX:510',
         /*画像*/items_avatar: 'assets/img/SMG/Maxim_Defense_MDX_510.jpg',
         /*種別*/classify: 'SMG',
         /*射撃モード*/fire_mode: 'S/F',
