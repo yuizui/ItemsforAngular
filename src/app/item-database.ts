@@ -1415,7 +1415,7 @@ export const ITEMS: ItemData[] = [
         /*遠距離*/r_long: '-40',
         /*貫通力*/penetration: '+4',
         /*非貫通D*/non_penetration_damage: '3D6+4',
-        /*貫通D*/penetration_damage: '5D6+6',
+        /*貫通D*/penetration_damage: '4D6+6',
         /*射程*/range: '5m',
         /*弾数*/mag_round: '-',
         /*必要筋力*/kinryoku: '両8/片-',
