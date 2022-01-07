@@ -76,7 +76,7 @@ export const ITEMS: ItemData[] = [
     //AK-12 (2020 model)
     {
         item_name: 'AK-12 (2020 model)',
-        items_avatar: 'assets/img/Rifle/ak12.png',
+        items_avatar: 'assets/img/Rifle/AK_12.jpg',
         classify: 'ライフル',
         fire_mode: 'S/2/F',
         reliability: '□□[□]',
