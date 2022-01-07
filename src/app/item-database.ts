@@ -73,37 +73,6 @@ export const ITEMS: ItemData[] = [
         '※次R同一目標攻撃時+15%'],
         /*説明*/note:  'AAC社の多目的ライフル。MP5SDを代替する目的で開発され、.300 AAC Blackout(300 BLK)用の12.5インチバレルとAAC 762-SDN-6サイレンサーが標準装備されている。新弾薬の300 BLKは高威力・高貫通力・静音性を兼ね備えるものの、非対応の銃に装填・射撃できてしまい、暴発事故を起こしている。'
     },
-    //AK-12 (2020 model)
-    {
-        item_name: 'AK-12 (2020 model)',
-        items_avatar: 'assets/img/Rifle/AK_12.jpg',
-        classify: 'ライフル',
-        fire_mode: 'S/2/F',
-        reliability: '□□[□]',
-        r_point_blank: '-40※',
-        r_short: '-20※',
-        r_middle: '-0',
-        r_long: '-20',
-        penetration: '+5',
-        non_penetration_damage: '2D6+2',
-        penetration_damage: '3D6+3',
-        range: '300m',
-        mag_round: '30',
-        kinryoku: '両6/片8☆',
-        size: '2×4',
-        silence: '2',
-        item_value: '$1100[9]',
-        mag_value: '$10[6]',
-        cartridge: '5.45mm×39',
-        item_width: '880/940mm',
-        item_weight: '3,300g',
-        efficiency: [
-            '狙撃-25%',
-            '※次R同一目標攻撃時+20%',
-            '★片手-20%'
-        ],
-        note: 'AKシリーズの新型。フリーフローティングバレルに変更され、遠距離の精度が向上した。一部のパーツがM4/M16と互換性がある。最新のものはフォールディングストックが採用され、運用しやすくなった。'
-    },
     //FN SCAR-H
     {
         /*アイテム名*/item_name: 'FN SCAR-H',
@@ -238,6 +207,37 @@ export const ITEMS: ItemData[] = [
         /*重量*/item_weight: '4,100g',
         /*機能*/efficiency: ['狙撃-0%','※次R同一目標攻撃時+15%'],
         /*説明*/note:  'アメリカ陸軍で使用されていたM110(SR25)には構造的な問題があり、また市街戦では全長と重量が過大であると言われていた。そこで白羽の矢が立ったのはHK社のHK417であり、軽量小型化改修が加えられたものがM110A1として採用された。'
+    },
+    //Kalashnikov Concern AK-12 (2020 model)
+    {
+        item_name: 'Kalashnikov Concern AK-12 (2020 model)',
+        items_avatar: 'assets/img/Rifle/Kalashnikov_Concern_AK_12.jpg',
+        classify: 'ライフル',
+        fire_mode: 'S/2/F',
+        reliability: '□□[□]',
+        r_point_blank: '-40※',
+        r_short: '-20※',
+        r_middle: '-0',
+        r_long: '-20',
+        penetration: '+5',
+        non_penetration_damage: '2D6+2',
+        penetration_damage: '3D6+3',
+        range: '300m',
+        mag_round: '30',
+        kinryoku: '両6/片8☆',
+        size: '2×4',
+        silence: '2',
+        item_value: '$1100[9]',
+        mag_value: '$10[6]',
+        cartridge: '5.45mm×39',
+        item_width: '880/940mm',
+        item_weight: '3,300g',
+        efficiency: [
+            '狙撃-25%',
+            '※次R同一目標攻撃時+20%',
+            '★片手-20%'
+        ],
+        note: 'AKシリーズの新型。フリーフローティングバレルに変更され、遠距離の精度が向上した。一部のパーツがM4/M16と互換性がある。最新のものはフォールディングストックが採用され、運用しやすくなった。'
     },
     //Remington R5 RGP
     {
