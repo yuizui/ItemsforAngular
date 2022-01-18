@@ -139,11 +139,11 @@ export const ITEMS: ItemData[] = [
         /*中距離*/r_middle: '-5',
         /*遠距離*/r_long: '-40',
         /*貫通力*/penetration: '+5',
-        /*非貫通D*/non_penetration_damage: '2D6+2',
-        /*貫通D*/penetration_damage: '3D6+3',
+        /*非貫通D*/non_penetration_damage: '2D6+3',
+        /*貫通D*/penetration_damage: '3D6+4',
         /*射程*/range: '200m',
         /*弾数*/mag_round: '30',
-        /*必要筋力*/kinryoku: '両6/片8★',
+        /*必要筋力*/kinryoku: '両6/片8',
         /*CP*/size: '2×3',
         /*消音LV*/silence: '2',
         /*本体価格*/item_value: '$2,000[13]',
@@ -151,7 +151,7 @@ export const ITEMS: ItemData[] = [
         /*弾薬*/cartridge: '5.56mm×45',
         /*全長*/item_width: '560/690mm',
         /*重量*/item_weight: '2,960g',
-        /*機能*/efficiency: ['狙撃-40%','※次R同一目標攻撃時+15%','★片手-20%'],
+        /*機能*/efficiency: ['狙撃-40%','※次R同一目標攻撃時+15%'],
         /*説明*/note:  'HK416を8.9インチ銃身とワイヤーストックに換装したいわゆるCQBモデル。狭所での取り回しは良いが、信頼性に問題がある。'
     },
     //H&K HK417
