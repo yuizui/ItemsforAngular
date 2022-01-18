@@ -73,6 +73,33 @@ export const ITEMS: ItemData[] = [
         '※次R同一目標攻撃時+15%'],
         /*説明*/note:  'AAC社の多目的ライフル。MP5SDを代替する目的で開発され、.300 AAC Blackout(300 BLK)用の12.5インチバレルとAAC 762-SDN-6サイレンサーが標準装備されている。新弾薬の300 BLKは高威力・高貫通力・静音性を兼ね備えるものの、非対応の銃に装填・射撃できてしまい、暴発事故を起こしている。'
     },
+    //Colt_M4A1_CQBR
+    {
+        /*アイテム名*/item_name: 'Colt M4A1 CQBR',
+        /*画像*/items_avatar: 'assets/img/Rifle/Colt_M4A1_CQBR.jpg',
+        /*種別*/classify: 'ライフル',
+        /*射撃モード*/fire_mode: 'S/F',
+        /*信頼性*/reliability: '00[99]',
+        /*至近*/r_point_blank: '-30※',
+        /*近距離*/r_short: '-15※',
+        /*中距離*/r_middle: '-2',
+        /*遠距離*/r_long: '-27',
+        /*貫通力*/penetration: '+5',
+        /*非貫通D*/non_penetration_damage: '2D6+3',
+        /*貫通D*/penetration_damage: '3D6+4',
+        /*射程*/range: '250m',
+        /*弾数*/mag_round: '30',
+        /*必要筋力*/kinryoku: '両6/片8',
+        /*CP*/size: '2×3',
+        /*消音LV*/silence: '2',
+        /*本体価格*/item_value: '$2000[13]',
+        /*マガジン価格*/mag_value: '$10[10]',
+        /*弾薬*/cartridge: '5.56mm×45',
+        /*全長*/item_width: '743mm',
+        /*重量*/item_weight: '2,700g',
+        /*機能*/efficiency: ['狙撃-35%','※次R同一目標攻撃時+20%'],
+        /*説明*/note: 'M4 カービンをさらに短銃身化した銃。SWATなどの特殊部隊で使用されている。'
+    },
     //FN SCAR-H
     {
         /*アイテム名*/item_name: 'FN SCAR-H',
